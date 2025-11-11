@@ -1,0 +1,556 @@
+/* ========= BASE LIGHTBOX STYLES ========= */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox-main-content {
+    position: relative;
+    width: 85vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 60px;
+}
+
+.lightbox-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========= IMAGE AND CAPTION STYLES ========= */
+.lightbox-image-container,
+.lightbox-model-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    min-height: 0; /* Previene el crecimiento excesivo */
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    color: var(--case-color, #0b1d0b);
+    padding: 8px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    text-align: left;
+}
+
+/* ========= VIDEO AND CHAPTERS ========= */
+.video-with-chapters {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    gap: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.video-container {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    min-width: 0; /* Permite que el contenedor se encoja */
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 0; /* Permite que el wrapper se encoja */
+    padding-top: 56.25%;
+    height: 0;
+}
+
+.lightbox-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ========= MODEL CONTENT ========= */
+.lightbox-model {
+    width: 100%;
+    height: calc(100% - 30px);
+    background: #ffffff;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    z-index: 10;
+    font-weight: 500;
+    color: rgb(14, 75, 35);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+}
+
+/* ========= CHAPTERS STYLES ========= */
+.lightbox-chapters {
+    width: 300px;
+    height: auto;
+    max-height: calc(80vh - 40px);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: rgb(14, 75, 35);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    align-self: center;
+    display: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.chapters-container {
+    width: 300px;
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-y: auto;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-out;
+}
+
+.lightbox-chapters.visible {
+    display: block;
+}
+
+.chapters-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1C3B2D;
+    margin: 0 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #5AAF55;
+}
+
+.chapters-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chapter-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.chapter-item:hover {
+    background-color: rgba(90, 175, 85, 0.1);
+}
+
+.chapter-item.active {
+    background-color: rgba(90, 175, 85, 0.2);
+    font-weight: 500;
+}
+
+.chapter-number {
+    color: #5AAF55;
+    font-weight: 500;
+    min-width: 24px;
+}
+
+.chapter-title {
+    flex: 1;
+    font-size: 14px;
+}
+
+.chapter-time {
+    color: #666;
+    font-size: 12px;
+}
+
+/* ========= NAVIGATION CONTROLS ========= */
+.lightbox-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 80px;
+    border: none;
+    color: rgb(4, 43, 8);
+    font-size: 2.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10001;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-nav:hover {
+    color: rgb(0, 215, 18);
+}
+
+.lightbox-nav.prev {
+    left: 10px;
+}
+
+.lightbox-nav.next {
+    right: 10px;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: rgb(3, 51, 6);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    z-index: 10001;
+}
+
+.lightbox-counter {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: rgb(14, 75, 35);
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 10001;
+}
+
+/* ========= DOWNLOAD TRANSCRIPT ========= */
+.download-transcript {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(28, 59, 45, 0.1);
+}
+
+.download-transcript-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    color: #1C3B2D;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.download-transcript-link:hover {
+    background-color: #e5e5e5;
+    color: #5AAF55;
+}
+
+.download-transcript-link svg {
+    transition: transform 0.2s ease;
+}
+
+.download-transcript-link:hover svg {
+    transform: translateY(2px);
+}
+
+/* ========= TITLE STYLES ========= */
+.lightbox-title {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.lightbox-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========= ANIMATIONS ========= */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ========= MEDIA QUERIES ========= */
+@media (max-width: 1200px) {
+    .video-container {
+        flex-direction: column;
+    }
+
+    .lightbox-chapters {
+        width: 100%;
+        height: 200px;
+        border-left: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .video-wrapper {
+        padding-top: 40%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .video-with-chapters {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .chapters-container {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lightbox-main-content {
+        margin: 0;
+        padding: 20px;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+
+    .video-wrapper {
+        padding-top: 56.25%;
+    }
+
+    .lightbox-chapters {
+        height: 180px;
+    }
+
+    .chapter-item {
+        padding: 8px 12px;
+    }
+
+    .video-with-chapters {
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .lightbox-nav {
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        padding: 0;
+        z-index: 10;
+    }
+
+    .lightbox-nav.prev {
+        left: 10px;
+    }
+
+    .lightbox-nav.next {
+        right: 10px;
+    }
+
+    .lightbox-close, 
+    .lightbox-counter {
+        position: fixed;
+        top: 15px;
+        background: rgba(255,255,255,0.7);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    }
+
+    .lightbox-close {
+        right: 15px;
+    }
+
+    .lightbox-counter {
+        left: 15px;
+    }
+
+    .lightbox-image-container,
+    .lightbox-model-container {
+        height: calc(100vh - 120px);
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    .lightbox-image {
+        max-height: calc(100vh - 140px);
+        width: auto;
+        max-width: calc(100vw - 80px);
+    }
+
+    .lightbox-caption {
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        width: auto;
+        margin: 0;
+        text-align: center;
+    }
+
+    .lightbox-model {
+        height: calc(100vh - 140px);
+    }
+
+    .lightbox-title {
+        bottom: 60px;
+        left: 10px;
+        right: 10px;
+        padding: 6px 12px;
+        font-size: 12px;
+        max-width: calc(100% - 20px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 480px) {
+    .lightbox-main-content {
+        padding: 10px;
+    }
+
+    .video-container {
+        padding: 0 3%;
+        margin-top: 40px;
+    }
+
+    .lightbox-chapters {
+        padding: 1rem 3%;
+    }
+
+    .lightbox-nav {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+    }
+
+    .lightbox-close {
+        font-size: 1.5rem;
+        top: 10px;
+        right: 10px;
+    }
+
+    .lightbox-counter {
+        font-size: 0.9rem;
+        top: 10px;
+        left: 10px;
+    }
+
+    .lightbox-caption {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        font-size: 12px;
+    }
+
+    .model-loading {
+        min-width: 150px;
+        padding: 0.6rem 1rem;
+        font-size: 13px;
+    }
+}
+
+@media (max-height: 600px) {
+    .lightbox-chapters {
+        max-height: 40vh;
+    }
+
+    .lightbox-chapters ul {
+        max-height: calc(40vh - 100px);
+    }
+}
+
+@media (pointer: coarse) {
+    .lightbox-nav,
+    .lightbox-close,
+    .lightbox-chapters li {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+@media (max-width: 768px) {
+    .model-loading {
+        width: auto;
+        min-width: 180px;
+        padding: 0.8rem 1.5rem;
+        font-size: 14px;
+    }
+}

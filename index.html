@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Exploración arquitectónica de edificios en diferentes altitudes y relieves montañosos de Colombia. Proyecto ARQDIS Universidad de los Andes.">
+		<meta name="keywords" content="arquitectura, Colombia, relieves, montañas, altitud, diseño arquitectónico, ARQDIS, Uniandes">
+
+		<!-- Open Graph para redes sociales -->
+		<meta property="og:title" content="Relieves - ARQDIS">
+		<meta property="og:description" content="Exploración arquitectónica en diferentes altitudes">
+		<meta property="og:image" content="[URL_IMAGEN_DESTACADA]">
+		<meta property="og:url" content="https://relieves.uniandes.edu.co">
+		<title>Relieves - ARQDIS</title>
+		<link rel="stylesheet" href="../assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+		<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="VpTRF1tD0mJC-Q" async></script>
+	</head>
+
+	<body>
+		<!-- Muestra el porcentaje de carga del contenido al iniciar la página. -->
+		<div id="initial-loader" style="position: fixed; inset: 0; background: white; z-index: 10000;"></div>
+
+		<!-- Barra de navegación -->
+		<nav id="main-nav">
+			<div class="nav-left">
+				<a href="https://arqdis.uniandes.edu.co/" target="_blank">
+					<img src="https://arqdis.uniandes.edu.co/wp-content/themes/arqdis/assets/logo-arqdis-r.svg"
+					alt="ARQDIS Logo" class="nav-logo">
+				</a>
+				<h1>Relieves</h1>
+			</div>
+
+			<div class="nav-center">
+				<span id="user-altitude">Estás a <span id="altitude-value">cargando...</span> msnm</span>
+				<span id="selected-case">Seleccione una imagen</span>
+			</div>
+
+			<div class="nav-right" id="new-menu-container">
+			<!-- El componente React del menú se montará aquí -->
+			</div>
+		</nav>
+
+		<!-- Overlay de bienvenida -->
+		<div id="welcome-overlay"></div>
+
+		<!-- Overlay de casos -->
+		<div id="menu-overlay" class="menu-overlay">
+			<div class="menu-content">
+				<div class="menu-body">
+					<div class="case-list">
+						<!-- Los casos de estudio se insertarán aquí con JavaScript -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Altímetro lateral -->
+		<div id="altimeter-container">
+			<div id="altimeter-label">msnm</div>
+			<div id="altimeter-bar"></div>
+		</div>
+
+		<!-- Grid de imágenes insertadas con JavaScript  -->
+		<div id="image-grid">
+			<!-- Las imágenes se insertarán aquí con JavaScript -->
+		</div>
+
+		<!-- Link a página de información  -->
+		<div class="info-link-container">
+			<a href="./info/" class="info-link">Más información del proyecto</a>
+		</div>
+
+		<!-- Link dinámico a caso de estudio  -->
+		<div id="feedback" class="feedback"></div>
+
+		<!-- Librerías -->
+		<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- Scripts de la aplicación -->
+		<script type="text/babel" src="../assets/js/shared/menu.js"></script>
+		<script src="../assets/js/shared/onboarding.js"></script>
+		<script src="../assets/js/script.js"></script>
+	</body>
+</html>

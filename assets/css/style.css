@@ -1,0 +1,737 @@
+/* ========= ESTILOS GENERALES ========= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+/* ========= BARRA DE NAVEGACIÓN ========= */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 29px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #1C3B2D;
+    margin: 0;
+}
+
+.nav-center {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#user-altitude {
+    font-size: 18px;
+    font-weight: 300;
+    color: #5AAF55;
+    margin-right: 100px;
+}
+
+#user-altitude.unavailable {
+    color: #888;
+}
+
+#user-altitude-indicator {
+    position: absolute;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5AAF55;
+    transform: translateY(-50%);
+    transition: bottom 0.3s ease;
+    cursor: help;
+}
+
+#user-altitude-indicator::before {
+    content: "Esta es tu altura relativa a los casos de estudio";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1000;
+}
+
+#user-altitude-indicator:hover::before {
+    opacity: 1;
+}
+
+#selected-case {
+    font-size: 18px;
+    color: #1C3B2D;
+    transition: all 0.3s ease;
+}
+
+body.menu-open #selected-case {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ========= BOTÓN DE MENÚ ========= */
+#menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+    color: #1C3B2D;
+    transition: font-style 0.01s ease;
+    margin-left: 20px;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    min-width: 65px;
+    justify-content: center;
+}
+
+#menu-btn:hover {
+    font-style: italic;
+}
+
+#menu-btn .close-text {
+    display: none;
+}
+
+body.menu-open #menu-btn .menu-text {
+    display: none;
+}
+
+body.menu-open #menu-btn .close-text {
+    display: inline-block;
+}
+
+body.menu-open #altimeter-container,
+body.menu-open #selected-case,
+body.menu-open #user-altitude {
+    display: none;
+}
+
+.nav-right {
+    position: relative;
+    min-width: 85px;
+    justify-content: flex-end;
+}
+
+/* ========= ALTÍMETRO ========= */
+#altimeter-container {
+    margin-top: 20px;
+    margin-left: 10px;
+    position: fixed;
+    left: 33px;
+    top: 90px;
+    bottom: 15px;
+    width: 1px;
+    z-index: 999;
+    visibility: visible;
+}
+
+#altimeter-label {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #1C3B2D;
+    white-space: nowrap;
+    font-weight: 100;
+}
+
+#altimeter-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background-color: #1C3B2D;
+}
+
+.altitude-marker {
+    position: absolute;
+    left: -4px;
+    width: 10px;
+    height: 1px;
+    background-color: #1C3B2D;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.altitude-marker.active {
+    width: 50px;
+    height: 25px;
+    left: -24px;
+    background-color: #5AAF55;
+    border-radius: 12.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    z-index: 1;
+}
+
+/* ========= GRID DE IMÁGENES ========= */
+#image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    margin-left: calc(33px + 29px + 20px);
+    margin-top: 80px;
+}
+
+.case-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+    background: #f0f0f0;
+    cursor: pointer;
+    transform-origin: center center;
+    will-change: transform;
+    box-shadow: 0 0 0 rgba(90, 175, 85, 0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.case-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--case-color, transparent);
+    opacity: 0;
+    mix-blend-mode: color;
+    transition: opacity 0.4s ease;
+    will-change: opacity;
+    transform: translateZ(0);
+}
+
+.case-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+    filter: grayscale(100%);
+    will-change: filter;
+    transform: translateZ(0);
+}
+
+.case-image:hover {
+    transform: scale(1.05) !important;
+    z-index: 2;
+    box-shadow: 0 8px 24px rgba(90, 175, 85, 0.3);
+}
+
+.case-image.active:hover {
+    transform: scale(1.05) !important;
+}
+
+.case-image.active::after {
+    opacity: 1;
+}
+
+.case-image.active img {
+    filter: grayscale(0%);
+}
+
+/* ========= MENÚ OVERLAY ========= */
+.menu-overlay {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    display: none;
+    overflow-y: auto;
+}
+
+.menu-overlay.show {
+    display: block;
+}
+
+.menu-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-body {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* ========= LISTA DE CASOS ========= */
+.case-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.case-item {
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    background-color: rgba(244, 244, 244);
+}
+
+.case-item:hover {
+    transform: translateY(-5px);
+   
+}
+
+.case-header {
+    margin-bottom: 20px;
+}
+
+.case-altitude {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1C3B2D;
+    margin: 0 0 10px 0;
+}
+
+.case-name {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.case-details {
+    color: #1C3B2D;
+}
+
+.case-location {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.case-architects {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.case-year {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+/* ========= MENÚ INTRO ========= */
+.menu-intro-link {
+    grid-column: 1 / -1;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    background-color: rgba(28, 59, 45, 0.05);
+    margin-bottom: 20px;
+}
+
+.menu-intro-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: rgba(28, 59, 45, 0.1);
+}
+
+.menu-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #1C3B2D;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-separator {
+    grid-column: 1 / -1;
+    height: 1px;
+    background-color: rgba(28, 59, 45, 0.1);
+    margin: 20px 0;
+}
+
+/* ========= FEEDBACK ========= */
+.feedback {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+}
+
+.feedback.show {
+    opacity: 1;
+    bottom: 40px;
+}
+
+.feedback.permanent {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.feedback.permanent:hover {
+    filter: brightness(0.9);
+}
+
+/* ========= OVERLAY DE BIENVENIDA ========= */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.overlay-content {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.text-content, .video-content {
+    flex: 1;
+}
+
+.video-container {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#continue-btn {
+    align-self: center;
+    background-color: #5AAF55;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+}
+
+#continue-btn:hover {
+    background-color: #4a9f45;
+}
+
+/* ========= MEDIA QUERIES ========= */
+@media screen and (max-width: 1200px) {
+    .case-list {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .case-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .menu-content {
+        padding: 20px;
+    }
+    
+    .case-item {
+        padding: 20px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+
+    .nav-center {
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+
+    #user-altitude {
+        display: none;
+    }
+
+    #selected-case {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 160px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .nav-right {
+        min-width: 60px;
+    }
+
+    #main-nav {
+        padding: 10px 15px;
+    }
+
+    .case-image::after {
+        opacity: 0;
+        background-color: transparent;
+        transition: opacity 0.3s ease, background-color 0.3s ease;
+    }
+
+    .case-image.active::after {
+        opacity: 1;
+        background-color: var(--case-color, transparent);
+    }
+    
+    .case-image, .case-image img, .case-image::after {
+        transform: translate3d(0,0,0);
+    }
+}
+
+/* ========= ENLACE DE INFORMACIÓN ========= */
+.info-link-container {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+.info-link {
+    font-size: 18px;
+    font-weight: 300;
+    color: #1C3B2D;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border: 1px solid #1C3B2D;
+    border-radius: 4px;
+}
+
+.info-link:hover {
+    background-color: #1C3B2D;
+    color: white;
+}
+
+/* ========= MEDIA QUERIES ========= */
+/* ========= MEDIA QUERIES ========= */
+
+@media screen and (max-width: 375px) {
+    .info-link-container {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    
+    .info-link {
+        font-size: 14px;
+        font-weight: 300;
+        color: #1C3B2D;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        padding: 8px 16px;
+        border: 1px solid #1C3B2D;
+        border-radius: 4px;
+    }
+    
+   
+
+    #user-altitude {
+        display: none;
+    }
+
+    #selected-case {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        max-width: 120px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 12px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        padding: 16px;
+    }
+
+    .overlay-content {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #continue-btn {
+        width: 100%;
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-content {
+        padding: 16px;
+        gap: 16px;
+    }
+}
+
+
+/* Mantener el efecto duotono consistente en móvil */
+@media screen and (max-width: 768px) {
+    .case-image {
+        position: relative;
+        overflow: hidden;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+    }
+
+    .case-image::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: var(--case-color, transparent);
+        opacity: 0;
+        mix-blend-mode: color;
+        transition: opacity 0.3s ease;
+        will-change: opacity;
+        transform: translateZ(0);
+    }
+
+    .case-image img {
+        transition: filter 0.3s ease;
+        will-change: filter;
+        transform: translateZ(0);
+    }
+
+    .case-image.active::after {
+        opacity: 0.8; /* Ajustar según sea necesario */
+    }
+
+    .case-image.active img {
+        filter: grayscale(100%) contrast(1.1);
+    }
+}
+
+/* Optimizaciones adicionales para el rendimiento en móvil */
+.case-image, 
+.case-image img, 
+.case-image::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
