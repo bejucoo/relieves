@@ -18,7 +18,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    height: 60px;
+    height: 80px;
     background-color: white;
     transition: background-color 0.3s ease;
 }
@@ -26,6 +26,7 @@ body {
 .nav-left, .nav-center, .nav-right {
     display: flex;
     align-items: center;
+	gap: 40px;
 }
 
 .nav-logo {
@@ -33,8 +34,8 @@ body {
 }
 
 h1 {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 18px !important;
+    font-weight: 300 !important;
     color: #1C3B2D;
     margin: 0;
 }
@@ -48,11 +49,14 @@ h1 {
     font-size: 18px;
     font-weight: 300;
     color: #5AAF55;
-    margin-right: 100px;
+	padding: 5px 10px;
+	border: 1px solid #5AAF55;
+	border-radius: 10px;
 }
 
 #user-altitude.unavailable {
-    color: #888;
+    color: #000;
+	border-color: #000;
 }
 
 #user-altitude-indicator {
@@ -91,8 +95,11 @@ h1 {
 
 #selected-case {
     font-size: 18px;
-    color: #1C3B2D;
+	font-weight: 400 !important;
+    color: #000;
     transition: all 0.3s ease;
+	padding: 5px 10px;
+	border-radius: 10px;
 }
 
 body.menu-open #selected-case {
@@ -153,7 +160,7 @@ body.menu-open #user-altitude {
     position: fixed;
     left: 33px;
     top: 90px;
-    bottom: 15px;
+    bottom: 100px;
     width: 1px;
     z-index: 999;
     visibility: visible;
@@ -180,21 +187,22 @@ body.menu-open #user-altitude {
 }
 
 .altitude-marker {
+	font-weight: 400;
     position: absolute;
-    left: -4px;
-    width: 10px;
-    height: 1px;
-    background-color: #1C3B2D;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
     cursor: pointer;
-    transition: all 0.3s ease;
+	border: 1px solid #000;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s ease;
 }
 
 .altitude-marker.active {
     width: 50px;
     height: 25px;
-    left: -24px;
     background-color: #5AAF55;
-    border-radius: 12.5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,6 +210,8 @@ body.menu-open #user-altitude {
     font-size: 12px;
     font-weight: 300;
     z-index: 1;
+	border-radius: 12.5px;
+	border: none;
 }
 
 /* ========= GRID DE IMÁGENES ========= */
@@ -410,6 +420,7 @@ body.menu-open #user-altitude {
     opacity: 0;
     transition: opacity 0.3s ease, bottom 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     z-index: 1000;
+	font-weight: 400 !important;
 }
 
 .feedback.show {
@@ -543,7 +554,7 @@ body.menu-open #user-altitude {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 160px;
+        max-width: 250px;
     }
 
     h1 {
@@ -630,7 +641,7 @@ body.menu-open #user-altitude {
         margin-left: auto;
         margin-right: auto;
         font-size: 12px;
-        max-width: 120px;
+        max-width: 250px;
     }
 
     h1 {

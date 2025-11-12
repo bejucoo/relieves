@@ -23,7 +23,7 @@ body.menu-open {
     left: 0;
     right: 0;
     z-index: 1000;
-    height: 60px;
+    height: 80px;
     background-color: white;
     animation: none;
     transform: none;
@@ -33,6 +33,7 @@ body.menu-open {
 .nav-left {
     display: flex;
     align-items: center;
+	gap: 40px;
     
 }
 
@@ -61,14 +62,14 @@ h1 {
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
 }
 
 #nombre-caso {
     font-size: 18px;
     font-weight: 300;
-    margin-right: 100px;
+    /*margin-right: 100px;*/
     transition: opacity 0.3s ease;
 }
 
@@ -90,12 +91,13 @@ h1 {
     justify-content: flex-end;
     min-width: 85px;
     position: relative;
+	gap: 40px;
 }
 
 /* ========= TICKER DE INFORMACIÓN ========= */
 .info-ticker-container {
     position: fixed;
-    top: 60px;
+    top: 80px;
     left: 0;
     right: 0;
     height: 30px;
@@ -237,7 +239,7 @@ h1 {
 /* ========= GALLERIES ========= */
 .galleries-container {
     position: fixed;
-    top: 90px;
+    top: 110px;
     left: 0;
     right: 0;
     bottom: 0;

@@ -650,7 +650,7 @@ function setAltitudeUnavailable() {
 }
 
 function updateUserAltitude(altitude) {
-    userAltitudeSpan.textContent = `${altitude}`;
+    userAltitudeSpan.textContent = `${altitude}msnm`;
     document.getElementById('user-altitude').classList.remove('unavailable');
     
     const indicator = document.getElementById('user-altitude-indicator');
@@ -695,6 +695,7 @@ function selectCase(caseId) {
     document.querySelectorAll('.altitude-marker').forEach(marker => {
         marker.classList.remove('active');
         marker.textContent = '';
+		marker.style.backgroundColor = '';
     });
     
     const selectedMarker = document.querySelector(`.altitude-marker[data-case-id="${caseId}"]`);
@@ -709,8 +710,9 @@ function selectCase(caseId) {
         
         updateImageGrid(caseId);
         
-        selectedCaseElement.textContent = selectedCase.name;
-        selectedCaseElement.style.color = selectedCase.color;
+        selectedCaseElement.textContent = `${selectedCase.name} | ${selectedMarker.dataset.altitude}msnm`;
+        selectedCaseElement.style.backgroundColor = selectedCase.color;
+		selectedCaseElement.style.color = calculateTextColor(selectedCase.color);
         
         // Aplicar color de fondo al feedback
         feedbackElement.style.backgroundColor = selectedCase.color;
@@ -835,8 +837,8 @@ function deselectCase() {
     
     updateImageGrid(null);
     selectedCaseElement.textContent = "Seleccione una imagen";
-    selectedCaseElement.style.color = "#1C3B2D";
-    feedbackElement.style.backgroundColor = "#5AAF55";
+    selectedCaseElement.style.color = "#000";
+    feedbackElement.style.backgroundColor = "#fff";
     
     hideFeedback();
     activeCaseId = null;
@@ -863,7 +865,7 @@ function resetWelcomeState() {
     // Reiniciar cualquier estado relacionado con el onboarding
     const userAltitudeSpan = document.querySelector('#user-altitude span');
     if (userAltitudeSpan) {
-        userAltitudeSpan.textContent = "obtener tu altura";
+        userAltitudeSpan.textContent = "click aquí para obtener altura.";
     }
     
     const userAltitudeIndicator = document.getElementById('user-altitude-indicator');
@@ -1081,7 +1083,7 @@ function initializeMainPage() {
     } else {
         const userAltitudeSpan = document.querySelector('#user-altitude span');
         if (userAltitudeSpan) {
-            userAltitudeSpan.textContent = "obtener tu altura";
+            userAltitudeSpan.textContent = "click aquí para obtener altura.";
             const userAltitudeElement = document.getElementById('user-altitude');
             if (userAltitudeElement) {
                 userAltitudeElement.classList.add('unavailable');
