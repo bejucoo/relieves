@@ -1,3 +1,4 @@
+// Crear estilo del onboarding
 const style = document.createElement('style');
 style.textContent = `
     @keyframes fadeIn {
@@ -73,13 +74,17 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+
+// Obtener fecha y devolver en string
 function getOnboardingKey() {
     return Date.now().toString();
 }
 
+
+// Hacer que la función esté disponible en window.
 window.getOnboardingKey = getOnboardingKey;
 
-window.getOnboardingKey = getOnboardingKey;
+
 
 const OnboardingExperience = ({ key }) => {
     const [step, setStep] = React.useState(0);

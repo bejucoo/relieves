@@ -1034,6 +1034,7 @@ function initializeMainPage() {
         });
     }
     
+    // Revisar función de carga de imágenes para hacer un nuevo loader.
     createAltitudeMarkers();
     createUserAltitudeIndicator();
     loadImages();
@@ -1121,8 +1122,8 @@ document.addEventListener('click', (event) => {
 
 // Inicialización cuando el DOM está listo
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Initializing application...");
-    
+    console.log("Initializing app...");
+
     // Event listeners principales
     if (menuBtn) {
         menuBtn.addEventListener('click', toggleMenu);
