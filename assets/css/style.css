@@ -45,6 +45,10 @@ h1 {
     flex-grow: 1;
 }
 
+#mobile-menu-toggle {
+	display: none;
+}
+
 #user-altitude {
     font-size: 18px;
     font-weight: 300;
@@ -172,9 +176,8 @@ body.menu-open #user-altitude {
     left: 50%;
     transform: translateX(-50%);
     font-size: 16px;
-    color: #1C3B2D;
     white-space: nowrap;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 #altimeter-bar {
@@ -532,7 +535,7 @@ body.menu-open #user-altitude {
         padding: 20px;
     }
 
-    .nav-logo {
+    a:has(.nav-logo) {
         display: none;
     }
 
@@ -542,7 +545,7 @@ body.menu-open #user-altitude {
 
     .nav-center {
         justify-content: flex-start;
-        margin-left: 10px;
+        /*margin-left: 15px;*/
     }
 
     #user-altitude {
@@ -562,12 +565,28 @@ body.menu-open #user-altitude {
     }
 
     .nav-right {
-        min-width: 60px;
+		display: none;
     }
+
+    .nav-right.active {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 65px;
+		left: 0;
+		width: 100%;
+		padding: 20px;
+		gap: 20px;
+		background: #fff;
+	}
 
     #main-nav {
         padding: 10px 15px;
     }
+
+    #mobile-menu-toggle {
+		display: block;
+	}
 
     .case-image::after {
         opacity: 0;
