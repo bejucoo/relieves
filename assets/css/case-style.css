@@ -89,10 +89,16 @@ h1 {
 .nav-right {
     display: flex;
     align-items: center;
-/*    justify-content: flex-end;
+/*  justify-content: flex-end;
     min-width: 85px;
     position: relative;*/
 	gap: 40px;
+}
+
+.nav-right a,
+#mobile-menu-toggle a {
+	color: #1C3B2D;
+	text-decoration: none;
 }
 
 #mobile-menu-toggle {
@@ -104,7 +110,7 @@ h1 {
 /* ========= TICKER DE INFORMACIÓN ========= */
 .info-ticker-container {
     position: fixed;
-    top: 80px;
+    top: 100px;
     left: 0;
     right: 0;
     height: 30px;
@@ -250,7 +256,7 @@ h1 {
 /* ========= GALLERIES ========= */
 .galleries-container {
     position: fixed;
-    top: 110px;
+    top: 120px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -553,7 +559,7 @@ h1 {
 
     .nav-center {
         justify-content: flex-start;
-        margin-left: 10px;
+        /*margin-left: 10px;*/
     }
 
     #user-altitude {
@@ -561,12 +567,14 @@ h1 {
     }
 
     #nombre-caso {
-        margin-right: 0;
+        /*margin-right: 0;*/
+		margin-left: auto;
+		margin-right: auto;
         font-size: 16px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 200px;
+        /*max-width: 200px;*/
     }
 
     #enlace-publicacion {
@@ -607,6 +615,7 @@ h1 {
 
     #main-nav {
         padding: 10px 15px;
+		gap: 20px;
     }
 
     .gallery-title {
@@ -648,7 +657,7 @@ h1 {
 @media screen and (max-width: 375px) {
     #nombre-caso {
         font-size: 14px;
-        max-width: 160px;
+        /*max-width: 160px;*/
     }
 
     h1 {

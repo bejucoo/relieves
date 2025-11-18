@@ -13,6 +13,10 @@ h1 {
     margin: 0;
 }
 /* ========= SECCIONES ========= */
+.info-container {
+	margin-top: 110px;
+}
+
 .info-section {
     max-width: 1200px;
     margin: 0 auto;

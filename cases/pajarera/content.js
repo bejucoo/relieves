@@ -392,7 +392,7 @@ const galleryConfigs = [
 ];
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const manager = new GalleriesManager(caseContent.galleries);
-    manager.init();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     const manager = new GalleriesManager(caseContent.galleries);
+//     manager.init();
+// });

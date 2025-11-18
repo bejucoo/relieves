@@ -161,6 +161,12 @@ body.menu-open #user-altitude {
     justify-content: flex-end;
 }
 
+.nav-right a,
+#mobile-menu-toggle a {
+	color: #1C3B2D;
+	text-decoration: none;
+}
+
 
 
 /* ========= ALTÍMETRO ========= */
@@ -598,6 +604,7 @@ body.menu-open #user-altitude {
 
     #main-nav {
         padding: 10px 15px;
+		gap: 20px;
     }
 
     #mobile-menu-toggle {

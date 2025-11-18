@@ -12,7 +12,7 @@ class ContinuousCarousel {
             gap: options.gap || 20,
             galleryId: options.id || ''
         };
-        
+
         this.items = [];
         this.isPaused = false;
         this.totalWidth = 0;
@@ -23,17 +23,17 @@ class ContinuousCarousel {
         // Configuración inicial del contenedor del carrusel
         this.container.className = 'gallery-row';
         this.container.style.setProperty('--case-color', this.options.color);
-        
+
         // Posicionamiento del título según la configuración
         if (this.options.titlePosition === 'left') {
             this.container.appendChild(this.createTitleElement());
         }
-        
+
         // Crear el contenedor principal del carrusel
         this.carouselContainer = document.createElement('div');
         this.carouselContainer.className = 'carousel-container';
         this.container.appendChild(this.carouselContainer);
-        
+
         if (this.options.titlePosition === 'right') {
             this.container.appendChild(this.createTitleElement());
         }
@@ -45,12 +45,12 @@ class ContinuousCarousel {
         // Crear y configurar el elemento del título
         const titleContainer = document.createElement('div');
         titleContainer.className = `gallery-title ${this.options.titlePosition}`;
-        
+
         const titleContent = document.createElement('div');
         titleContent.className = 'gallery-title-content';
         titleContent.style.color = this.options.color;
         titleContent.textContent = this.options.title;
-        
+
         titleContainer.appendChild(titleContent);
         return titleContainer;
     }
@@ -84,24 +84,24 @@ class ContinuousCarousel {
             return new Promise((resolve) => {
                 const element = document.createElement('div');
                 element.className = 'carousel-item';
-                
+
                 const img = document.createElement('img');
                 img.src = item.thumbnail || item;
                 img.loading = 'lazy';
-                
+
                 // Asegurarnos de que tenemos toda la información necesaria
                 if (typeof item === 'object') {
                     // Usamos el índice del item si existe, o creamos uno basado en la posición
                     const itemIndex = item.index || arrayIndex + 1;
-                    
+
                     element.dataset.type = item.type;
                     element.dataset.content = item.fullContent || '';
                     element.dataset.index = itemIndex;
-                    
+
                     // Asegurarnos de que pasamos el item completo y el índice correcto
                     element.addEventListener('click', (e) => {
                         e.preventDefault();
-                        console.log('Click en item:', item); // Debug
+                        // console.log('Click en item:', item); // Debug
                         if (item.type === 'model') {
                             this.openInLightbox({
                                 ...item,
@@ -112,19 +112,19 @@ class ContinuousCarousel {
                         }
                     });
                 }
-                
+
                 img.onload = () => {
                     const position = this.totalWidth + (arrayIndex * (img.width + this.options.gap));
                     element.style.transform = `translateX(${position}px)`;
                     resolve(element);
                 };
-                
+
                 element.appendChild(img);
                 this.carouselContainer.appendChild(element);
                 elements.push(element);
             });
         });
-    
+
         await Promise.all(loadPromises);
         return elements;
     }
@@ -137,14 +137,14 @@ class ContinuousCarousel {
                 console.error('No se encontró la configuración de la galería');
                 return;
             }
-    
-            console.log('Abriendo en lightbox:', {
-                item,
-                index,
-                total: galleryConfig.items.length,
-                galleryId: this.options.galleryId
-            });
-    
+
+            // console.log('Abriendo en lightbox:', {
+            //     item,
+            //     index,
+            //     total: galleryConfig.items.length,
+            //     galleryId: this.options.galleryId
+            // });
+
             window.lightbox.open({
                 item: {
                     ...item,
@@ -176,7 +176,7 @@ class ContinuousCarousel {
         let lastTime = performance.now();
         let pauseStartTime = null;
         let accumulatedPauseTime = 0;
-        
+
         const animate = (currentTime) => {
             if (!this.isPaused) {
                 if (pauseStartTime !== null) {
@@ -184,10 +184,10 @@ class ContinuousCarousel {
                     lastTime = currentTime - accumulatedPauseTime;
                     pauseStartTime = null;
                 }
-    
+
                 const deltaTime = (currentTime - lastTime - accumulatedPauseTime);
                 lastTime = currentTime - accumulatedPauseTime;
-                
+
                 const speed = this.options.direction === 'left' ? -1 : 1;
                 const easeFactor = pauseStartTime === null ? 1 : Math.min((currentTime - lastTime) / 500, 1);
                 const moveAmount = (speed * this.options.speed * deltaTime * easeFactor) / 16;
@@ -196,25 +196,25 @@ class ContinuousCarousel {
                     const currentX = this.getItemPosition(item);
                     const itemWidth = item.offsetWidth;
                     const containerRect = this.carouselContainer.getBoundingClientRect();
-                    
+
                     let newX = currentX + moveAmount;
 
                     if (this.options.direction === 'left') {
                         if (currentX + itemWidth < 0) {
-                            const lastPosition = Math.max(...this.items.map(i => 
+                            const lastPosition = Math.max(...this.items.map(i =>
                                 this.getItemPosition(i) + i.offsetWidth
                             ));
                             newX = lastPosition + this.options.gap;
                         }
                     } else {
                         if (currentX > containerRect.width) {
-                            const firstPosition = Math.min(...this.items.map(i => 
+                            const firstPosition = Math.min(...this.items.map(i =>
                                 this.getItemPosition(i)
                             ));
                             newX = firstPosition - itemWidth - this.options.gap;
                         }
                     }
-                    
+
                     item.style.transform = `translateX(${newX}px)`;
                 });
             } else {
@@ -222,7 +222,7 @@ class ContinuousCarousel {
                     pauseStartTime = currentTime;
                 }
             }
-            
+
             this.animationFrame = requestAnimationFrame(animate);
         };
 
@@ -248,7 +248,7 @@ class ContinuousCarousel {
     handleResize() {
         const containerWidth = this.carouselContainer.offsetWidth;
         this.totalWidth = this.calculateTotalWidth();
-        
+
         if (this.totalWidth < containerWidth * 2) {
             this.loadInitialImages();
         }
@@ -270,7 +270,7 @@ class GalleriesManager {
         this.configs = configs;
         this.instances = [];
     }
-    
+
     init() {
         this.configs.forEach((config, index) => {
             const container = document.getElementById(config.id);
@@ -286,7 +286,7 @@ class GalleriesManager {
             }
         });
     }
-    
+
     destroy() {
         this.instances.forEach(instance => instance.destroy());
         this.instances = [];
