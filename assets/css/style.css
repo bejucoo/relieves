@@ -6,6 +6,8 @@ body {
     font-weight: 200;
 }
 
+
+
 /* ========= BARRA DE NAVEGACIÓN ========= */
 #main-nav {
     display: flex;
@@ -111,8 +113,10 @@ body.menu-open #selected-case {
     pointer-events: none;
 }
 
+
+
 /* ========= BOTÓN DE MENÚ ========= */
-#menu-btn {
+/*#menu-btn {
     background: none;
     border: none;
     cursor: pointer;
@@ -149,13 +153,15 @@ body.menu-open #altimeter-container,
 body.menu-open #selected-case,
 body.menu-open #user-altitude {
     display: none;
-}
+}*/
 
 .nav-right {
     position: relative;
     min-width: 85px;
     justify-content: flex-end;
 }
+
+
 
 /* ========= ALTÍMETRO ========= */
 #altimeter-container {
@@ -198,7 +204,7 @@ body.menu-open #user-altitude {
     cursor: pointer;
 	border: 1px solid #000;
 	border-radius: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-45%, -50%);
 	transition: all 0.3s ease;
 }
 
@@ -216,6 +222,8 @@ body.menu-open #user-altitude {
 	border-radius: 12.5px;
 	border: none;
 }
+
+
 
 /* ========= GRID DE IMÁGENES ========= */
 #image-grid {
@@ -285,8 +293,10 @@ body.menu-open #user-altitude {
     filter: grayscale(0%);
 }
 
+
+
 /* ========= MENÚ OVERLAY ========= */
-.menu-overlay {
+/*.menu-overlay {
     position: fixed;
     top: 60px;
     left: 0;
@@ -315,10 +325,10 @@ body.menu-open #user-altitude {
 .menu-body {
     display: flex;
     flex-grow: 1;
-}
+}*/
 
 /* ========= LISTA DE CASOS ========= */
-.case-list {
+/*.case-list {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -377,10 +387,10 @@ body.menu-open #user-altitude {
     font-size: 16px;
     margin: 0;
     color: #666;
-}
+}*/
 
 /* ========= MENÚ INTRO ========= */
-.menu-intro-link {
+/*.menu-intro-link {
     grid-column: 1 / -1;
     padding: 30px;
     cursor: pointer;
@@ -410,7 +420,9 @@ body.menu-open #user-altitude {
     height: 1px;
     background-color: rgba(28, 59, 45, 0.1);
     margin: 20px 0;
-}
+}*/
+
+
 
 /* ========= FEEDBACK ========= */
 .feedback {
@@ -440,8 +452,10 @@ body.menu-open #user-altitude {
     filter: brightness(0.9);
 }
 
+
+
 /* ========= OVERLAY DE BIENVENIDA ========= */
-.overlay {
+/*.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -512,7 +526,9 @@ body.menu-open #user-altitude {
 
 #continue-btn:hover {
     background-color: #4a9f45;
-}
+}*/
+
+
 
 /* ========= MEDIA QUERIES ========= */
 @media screen and (max-width: 1200px) {
@@ -604,8 +620,10 @@ body.menu-open #user-altitude {
     }
 }
 
+
+
 /* ========= ENLACE DE INFORMACIÓN ========= */
-.info-link-container {
+/*.info-link-container {
     width: 100%;
     text-align: center;
     padding: 40px 0;
@@ -626,11 +644,11 @@ body.menu-open #user-altitude {
 .info-link:hover {
     background-color: #1C3B2D;
     color: white;
-}
+}*/
+
+
 
 /* ========= MEDIA QUERIES ========= */
-/* ========= MEDIA QUERIES ========= */
-
 @media screen and (max-width: 375px) {
     .info-link-container {
         width: 100%;
@@ -720,6 +738,7 @@ body.menu-open #user-altitude {
 }
 
 
+
 /* Mantener el efecto duotono consistente en móvil */
 @media screen and (max-width: 768px) {
     .case-image {
@@ -755,6 +774,8 @@ body.menu-open #user-altitude {
         filter: grayscale(100%) contrast(1.1);
     }
 }
+
+
 
 /* Optimizaciones adicionales para el rendimiento en móvil */
 .case-image, 

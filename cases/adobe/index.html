@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relieves ARQDIS</title>
-    
-    <!-- Estilos -->
-    <link rel="stylesheet" href="../../assets/css/case-style.css">
-    <link rel="stylesheet" href="../../assets/css/lightbox.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Relieves ARQDIS</title>
 
-    <!-- Three.js y dependencias -->
-    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/MTLLoader.js"></script>
-    
-    <!-- React y Babel -->
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Estilos -->
+		<link rel="stylesheet" href="../../assets/css/case-style.css">
+		<link rel="stylesheet" href="../../assets/css/lightbox.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
-</head>
-<body>
+		<!-- Three.js y dependencias -->
+		<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+		<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+		<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+		<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/MTLLoader.js"></script>
 
-    <div id="case-loader" class="case-loader">
-        <div class="loader-content">
-            <div class="loader-spinner"></div>
-            <div class="loader-text">Cargando contenido...</div>
-            <div class="loader-progress">0%</div>
-        </div>
-    </div>
+		<!-- React y Babel -->
+		<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    
-    <nav id="main-nav">
-        <div class="nav-left">
-            <a href="https://arqdis.uniandes.edu.co/" target="_blank">
-                <img src="https://arqdis.uniandes.edu.co/wp-content/themes/arqdis/assets/logo-arqdis-r.svg"
-                    alt="ARQDIS Logo" class="nav-logo">
-            </a>
-       
-            <a href="../.." id="Titulo-Relieves">
-                <h1>Relieves</h1>   
-            </a>
-        </div>
-        <div class="nav-center">
-            <span id="nombre-caso"></span>
-            <span id="enlace-publicacion">
-                <a href="https://arqdis.uniandes.edu.co/publicaciones/" target="_blank">
-                    Acceda a la publicación completa
-                </a>
-            </span>
-        </div>
+		<!-- Tailwind -->
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+	</head>
 
-        <div class="nav-right" id="new-menu-container">
-            <!-- El componente React del menú se montará aquí -->
-        </div>
-    </nav>
+	<body>
+		<div id="case-loader" class="case-loader">
+			<div class="loader-content">
+				<div class="loader-spinner"></div>
+				<div class="loader-text">Cargando contenido...</div>
+				<div class="loader-progress">0%</div>
+			</div>
+		</div>
 
-    <div class="info-ticker-container">
-        <div class="info-ticker" id="info-ticker"></div>
-    </div>
+		<nav id="main-nav">
+			<div class="nav-left">
+				<a href="https://arqdis.uniandes.edu.co/" target="_blank">
+					<img src="https://arqdis.uniandes.edu.co/wp-content/themes/arqdis/assets/logo-arqdis-r.svg" alt="ARQDIS Logo" class="nav-logo">
+				</a>
 
-    <div class="galleries-container">
-        <div id="galeria-testimonios"></div>
-        <div id="galeria-planimetria"></div>
-        <div id="galeria-proyecto"></div>
-        <div id="galeria-analisis"></div>
-    </div>
-    
-    <div id="menu-overlay" class="menu-overlay">
-        <div class="menu-content">
-            <div class="menu-body">
-                <div class="case-list">
-                    <!-- Los casos de estudio se insertarán aquí con JavaScript -->
-                </div>
-            </div>
-        </div>
-    </div>
+				<a href="../.." id="Titulo-Relieves">
+					<h1>Relieves</h1>
+				</a>
+			</div>
 
-    <!-- Scripts de la aplicación -->
-    <script type="text/babel" src="../../assets/js/shared/lightbox-core.js"></script>
-    <script src="../../assets/js/shared/case-data.js"></script>
-    <script src="../../assets/js/shared/case-core.js"></script>
-    <script src="../../assets/js/shared/carousel-core.js"></script>
-    <script type="text/babel" src="../../assets/js/shared/menu.js"></script>
-    <script src="content.js"></script>
-</body>
+			<div class="nav-center">
+				<span id="nombre-caso"></span>
+				<!--<span id="enlace-publicacion">
+					<a href="https://arqdis.uniandes.edu.co/publicaciones/" target="_blank">Acceda a la publicación completa</a>
+				</span>-->
+			</div>
+
+			<div class="nav-right" id="mobile-menu">
+				<!-- El componente React del menú se montará aquí -->
+				<h1><a href="">Sobre Relieves</a></h1>
+				<h1><a href="">Casos de estudio</a></h1>
+				<h1><a href="">¿Cómo usar esta página?</a></h1>
+			</div>
+
+			<h1 id="mobile-menu-toggle"><a href="">☰</a></h1>
+		</nav>
+
+		<div class="info-ticker-container">
+			<div class="info-ticker" id="info-ticker"></div>
+		</div>
+
+		<div class="galleries-container">
+			<div id="galeria-testimonios"></div>
+			<div id="galeria-planimetria"></div>
+			<div id="galeria-proyecto"></div>
+			<div id="galeria-analisis"></div>
+		</div>
+
+		<!--<div id="menu-overlay" class="menu-overlay">
+			<div class="menu-content">
+				<div class="menu-body">
+					<div class="case-list">
+						<!-- Los casos de estudio se insertarán aquí con JavaScript
+					</div>
+				</div>
+			</div>
+		</div>-->
+
+		<!-- Scripts de la aplicación -->
+		<script type="text/babel" src="../../assets/js/shared/lightbox-core.js"></script>
+		<script src="../../assets/js/shared/case-data.js"></script>
+		<script src="../../assets/js/shared/case-core.js"></script>
+		<script src="../../assets/js/shared/carousel-core.js"></script>
+		<!--<script type="text/babel" src="../../assets/js/shared/menu.js"></script>-->
+		<script src="content.js"></script>
+	</body>
 </html>

@@ -42,8 +42,8 @@ body.menu-open {
 }
 
 h1 {
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 18px !important;
+	font-weight: 300 !important;
     color: #1C3B2D;
     margin: 0;
     transition: color 0.3s ease;
@@ -69,11 +69,12 @@ h1 {
 #nombre-caso {
     font-size: 18px;
     font-weight: 300;
-    /*margin-right: 100px;*/
     transition: opacity 0.3s ease;
+	padding: 5px 10px;
+	border-radius: 10px;
 }
 
-#enlace-publicacion a {
+/*#enlace-publicacion a {
     text-decoration: none;
     color: #5AAF55;
     transition: all 0.3s ease;
@@ -82,17 +83,23 @@ h1 {
 
 #enlace-publicacion a:hover {
     color: #1C3B2D;
-}
+}*/
 
 /* Navegación derecha */
 .nav-right {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+/*    justify-content: flex-end;
     min-width: 85px;
-    position: relative;
+    position: relative;*/
 	gap: 40px;
 }
+
+#mobile-menu-toggle {
+	display: none;
+}
+
+
 
 /* ========= TICKER DE INFORMACIÓN ========= */
 .info-ticker-container {
@@ -138,8 +145,10 @@ h1 {
     color: var(--ticker-text-color, #1C3B2D) !important;
 }
 
+
+
 /* ========= MENÚ OVERLAY ========= */
-.menu-overlay {
+/*.menu-overlay {
     position: fixed;
     top: 60px;
     left: 0;
@@ -234,7 +243,9 @@ h1 {
     font-size: 16px;
     margin: 0;
     color: #666;
-}
+}*/
+
+
 
 /* ========= GALLERIES ========= */
 .galleries-container {
@@ -322,6 +333,8 @@ h1 {
     transform: scale(1.05);
 }
 
+
+
 /* ========= LOADER ========= */
 .case-loader {
     position: fixed;
@@ -368,6 +381,8 @@ h1 {
     font-size: 14px;
     font-weight: 300;
 }
+
+
 
 /* ========= VIDEO CON CAPÍTULOS ========= */
 .video-with-chapters {
@@ -454,6 +469,8 @@ h1 {
     font-size: 12px;
 }
 
+
+
 /* ========= LIGHTBOX ========= */
 .lightbox-title {
     opacity: 0;
@@ -465,6 +482,8 @@ h1 {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
 }
+
+
 
 /* ========= ANIMACIONES ========= */
 @keyframes tickerScroll {
@@ -487,6 +506,8 @@ h1 {
         transform: translateX(0);
     }
 }
+
+
 
 /* ========= MEDIA QUERIES ========= */
 @media screen and (max-width: 1200px) {
@@ -526,7 +547,7 @@ h1 {
         padding: 20px;
     }
 
-    .nav-logo {
+    a:has(.nav-logo) {
         display: none;
     }
 
@@ -565,8 +586,24 @@ h1 {
     }
 
     .nav-right {
-        min-width: 60px;
+		display: none;
     }
+
+    .nav-right.active {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 65px;
+		left: 0;
+		width: 100%;
+		padding: 20px;
+		gap: 20px;
+		background: #fff;
+	}
+
+	#mobile-menu-toggle {
+		display: block;
+	}
 
     #main-nav {
         padding: 10px 15px;

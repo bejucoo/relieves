@@ -1,13 +1,14 @@
-// Función para obtener el ID del caso actual
+const menuToggle = document.getElementById('mobile-menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+// Obtener el ID del caso actual.
 function getCurrentCaseId() {
     const pathname = window.location.pathname;
-    // Buscar el nombre del caso en la última parte de la ruta
-    const segments = pathname.split('/');
-    const currentPath = segments[segments.length - 2]; // Ahora tomamos el penúltimo segmento
-    
-    // Resto del código...
 
-    
+	// Buscar el nombre del caso en la última parte de la ruta
+    const segments = pathname.split('/');
+    const currentPath = segments[segments.length - 2];
+
     if (!window.caseNames) {
         const directMapping = {
             'japon': 6,
@@ -32,6 +33,7 @@ function getCurrentCaseId() {
     return null;
 }
 
+
 function calculateTextColor(backgroundColor) {
     // Convertir hex a rgb
     const hex = backgroundColor.replace('#', '');
@@ -46,6 +48,7 @@ function calculateTextColor(backgroundColor) {
     return luminance > 0.5 ? '#1C3B2D' : '#FFFFFF';
 }
 
+
 // Función para obtener el caso actual
 function getCurrentCase() {
     const caseId = getCurrentCaseId();
@@ -54,7 +57,7 @@ function getCurrentCase() {
     return window.caseStudies.find(study => study.id === caseId);
 }
 
-// Función para inicializar el ticker de información
+
 // Función para calcular el color del texto basado en el contraste
 function calculateTextColor(backgroundColor) {
     // Convertir hex a rgb
@@ -69,6 +72,7 @@ function calculateTextColor(backgroundColor) {
     // Retornar color basado en luminancia
     return luminance > 0.5 ? '#1C3B2D' : '#FFFFFF';
 }
+
 
 // Función modificada para inicializar el ticker
 function initializeInfoTicker(currentCase) {
@@ -130,6 +134,7 @@ function initializeInfoTicker(currentCase) {
     }
 }
 
+
 // Función para inicializar el caso
 function initializeCase() {
     const currentCase = getCurrentCase();
@@ -142,7 +147,8 @@ function initializeCase() {
     const nombreCasoElement = document.getElementById('nombre-caso');
     if (nombreCasoElement) {
         nombreCasoElement.textContent = currentCase.fullName;
-        nombreCasoElement.style.color = currentCase.color;
+        nombreCasoElement.style.backgroundColor = currentCase.color;
+		nombreCasoElement.style.color = calculateTextColor(currentCase.color);
     }
 
     // Actualizar el título del documento
@@ -151,6 +157,7 @@ function initializeCase() {
     // Inicializar el ticker después de establecer la información básica
     initializeInfoTicker(currentCase);
 }
+
 
 // Función que intenta inicializar repetidamente hasta que tenga éxito
 function tryInitialize(attempts = 0) {
@@ -233,10 +240,26 @@ function initializeLoader() {
 }
 
 
+function toggleMenu(e) {
+    // const isMenuOpen = document.body.classList.toggle('menu-open');
+    // menuOverlay.style.display = isMenuOpen ? 'block' : 'none';
+    // if (isMenuOpen) {
+    //     populateCaseList();
+    // }
+	e.preventDefault();
+	mobileMenu.classList.toggle('active');
+}
+
+
 // Iniciar el proceso cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
     initializeLoader();
     console.log('Iniciando inicialización del caso...');
     tryInitialize();
-});
 
+	if (menuToggle) {
+        menuToggle.addEventListener('click', (e) => {
+			toggleMenu(e);
+		});
+    }
+});
