@@ -1114,12 +1114,16 @@ window.navigateToCaseStudy = function(caseId) {
         window.location.href = casePath;
     }
 };
+
 // Mover este evento fuera del DOMContentLoaded
 document.addEventListener('click', (event) => {
-    if (activeCaseId && 
-        !event.target.closest('.case-image.active') && 
-        !event.target.closest('#feedback') && 
-        !event.target.closest('.altitude-marker')) {
+    if (
+		activeCaseId &&
+		!event.target.closest('#driver-toggle') &&
+        !event.target.closest('.case-image.active') &&
+        !event.target.closest('#feedback') &&
+        !event.target.closest('.altitude-marker')
+	) {
         deselectCase();
     }
 });
