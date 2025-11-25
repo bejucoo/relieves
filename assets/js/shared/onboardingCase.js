@@ -8,17 +8,33 @@ const driverObj = driver({
 	showProgress: true,
 	steps: [
 		{
+			element: '#info-ticker',
+			popover: {
+				description: 'Conoce sobre cada caso.'
+			}
+		},
+		{
 			element: '#galeria-testimonios',
 			popover: {
-				title: '',
 				description: 'Descubre testimonios.'
 			}
 		},
 		{
 			element: '#galeria-planimetria',
 			popover: {
-				title: '',
 				description: 'Entiende la planimetría.'
+			}
+		},
+		{
+			element: '#galeria-proyecto',
+			popover: {
+				description: 'Aprende de sus fotografías.'
+			}
+		},
+		{
+			element: '#galeria-analisis',
+			popover: {
+				description: 'Analiza su entorno climático.'
 			}
 		}
 	]
@@ -26,5 +42,10 @@ const driverObj = driver({
 
 driverToggle.addEventListener('click', (e) => {
 	e.preventDefault();
+
+	if (window.innerWidth <= 768) {
+		menuToggle.click();
+	}
+
 	driverObj.drive();
 });

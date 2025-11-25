@@ -8,7 +8,6 @@ const driverObj = driver({
 		{
 			element: '#user-altitude',
 			popover: {
-				title: '',
 				description: 'Observa tu altitud actual.'
 			}
 		},
@@ -34,7 +33,12 @@ driverToggle.addEventListener('click', (e) => {
 	const firstImage = grid.firstElementChild;
 
 	e.preventDefault();
-
 	firstImage.click();
-	driverObj.drive();
+
+	if (window.innerWidth <= 768) {
+		menuToggle.click();
+		driverObj.drive(1);
+	} else {
+		driverObj.drive();
+	}
 });
