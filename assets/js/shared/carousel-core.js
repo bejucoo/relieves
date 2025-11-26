@@ -1,8 +1,7 @@
 class ContinuousCarousel {
     constructor(container, galleries, options = {}) {
-        // Inicialización de propiedades básicas del carrusel
         this.container = container;
-        this.galleries = galleries;  // Configuración de las galerías
+        this.galleries = galleries;
         this.options = {
             speed: options.speed || 1,
             direction: options.direction || 'left',
@@ -20,29 +19,25 @@ class ContinuousCarousel {
     }
 
     init() {
-        // Configuración inicial del contenedor del carrusel
         this.container.className = 'gallery-row';
         this.container.style.setProperty('--case-color', this.options.color);
 
-        // Posicionamiento del título según la configuración
-        if (this.options.titlePosition === 'left') {
-            this.container.appendChild(this.createTitleElement());
-        }
+        // if (this.options.titlePosition === 'left') {
+		this.container.appendChild(this.createTitleElement());
+        // }
 
-        // Crear el contenedor principal del carrusel
         this.carouselContainer = document.createElement('div');
         this.carouselContainer.className = 'carousel-container';
         this.container.appendChild(this.carouselContainer);
 
-        if (this.options.titlePosition === 'right') {
-            this.container.appendChild(this.createTitleElement());
-        }
+        // if (this.options.titlePosition === 'right') {
+        //     this.container.appendChild(this.createTitleElement());
+        // }
 
         this.setupCarousel();
     }
 
     createTitleElement() {
-        // Crear y configurar el elemento del título
         const titleContainer = document.createElement('div');
         titleContainer.className = `gallery-title ${this.options.titlePosition}`;
 
@@ -57,8 +52,8 @@ class ContinuousCarousel {
 
     async setupCarousel() {
         await this.loadInitialImages();
-        this.startAnimation();
-        this.setupEventListeners();
+        // this.startAnimation();
+        //this.setupEventListeners();
     }
 
     async loadInitialImages() {
@@ -66,16 +61,16 @@ class ContinuousCarousel {
         const baseItems = await this.createImageSet(this.galleries);
         this.items.push(...baseItems);
 
-        // Calcular el ancho total necesario
-        const containerWidth = this.carouselContainer.offsetWidth;
-        this.totalWidth = this.calculateTotalWidth();
+        // // Calcular el ancho total necesario
+        // const containerWidth = this.carouselContainer.offsetWidth;
+        // this.totalWidth = this.calculateTotalWidth();
 
         // Duplicar imágenes hasta llenar el viewport más buffer
-        while (this.totalWidth < containerWidth * 2) {
-            const newItems = await this.createImageSet(this.galleries);
-            this.items.push(...newItems);
-            this.totalWidth = this.calculateTotalWidth();
-        }
+        // while (this.totalWidth < containerWidth * 2) {
+        //     const newItems = await this.createImageSet(this.galleries);
+        //     this.items.push(...newItems);
+        //     this.totalWidth = this.calculateTotalWidth();
+        // }
     }
 
     async createImageSet(galleries) {
@@ -113,11 +108,12 @@ class ContinuousCarousel {
                     });
                 }
 
-                img.onload = () => {
-                    const position = this.totalWidth + (arrayIndex * (img.width + this.options.gap));
+                /*img.onload = () => {
+                    // const position = this.totalWidth + (arrayIndex * (img.width + this.options.gap));
+					const position = arrayIndex * (img.width + this.options.gap);
                     element.style.transform = `translateX(${position}px)`;
                     resolve(element);
-                };
+                };*/
 
                 element.appendChild(img);
                 this.carouselContainer.appendChild(element);
@@ -160,109 +156,109 @@ class ContinuousCarousel {
         }
     }
 
-    calculateTotalWidth() {
-        return this.items.reduce((width, item) => {
-            const img = item.querySelector('img');
-            return width + img.offsetWidth + this.options.gap;
-        }, 0);
-    }
+    // calculateTotalWidth() {
+    //     return this.items.reduce((width, item) => {
+    //         const img = item.querySelector('img');
+    //         return width + img.offsetWidth + this.options.gap;
+    //     }, 0);
+    // }
 
-    getItemPosition(item) {
-        const transform = new DOMMatrix(getComputedStyle(item).transform);
-        return transform.m41;
-    }
+    // getItemPosition(item) {
+    //     const transform = new DOMMatrix(getComputedStyle(item).transform);
+    //     return transform.m41;
+    // }
 
-    startAnimation() {
-        let lastTime = performance.now();
-        let pauseStartTime = null;
-        let accumulatedPauseTime = 0;
+    // startAnimation() {
+    //     let lastTime = performance.now();
+    //     let pauseStartTime = null;
+    //     let accumulatedPauseTime = 0;
+    //
+    //     const animate = (currentTime) => {
+    //         if (!this.isPaused) {
+    //             if (pauseStartTime !== null) {
+    //                 accumulatedPauseTime = currentTime - pauseStartTime;
+    //                 lastTime = currentTime - accumulatedPauseTime;
+    //                 pauseStartTime = null;
+    //             }
+    //
+    //             const deltaTime = (currentTime - lastTime - accumulatedPauseTime);
+    //             lastTime = currentTime - accumulatedPauseTime;
+    //
+    //             const speed = this.options.direction === 'left' ? -1 : 1;
+    //             const easeFactor = pauseStartTime === null ? 1 : Math.min((currentTime - lastTime) / 500, 1);
+    //             const moveAmount = (speed * this.options.speed * deltaTime * easeFactor) / 16;
+    //
+    //             this.items.forEach(item => {
+    //                 const currentX = this.getItemPosition(item);
+    //                 const itemWidth = item.offsetWidth;
+    //                 const containerRect = this.carouselContainer.getBoundingClientRect();
+    //
+    //                 let newX = currentX + moveAmount;
+    //
+    //                 if (this.options.direction === 'left') {
+    //                     if (currentX + itemWidth < 0) {
+    //                         const lastPosition = Math.max(...this.items.map(i =>
+    //                             this.getItemPosition(i) + i.offsetWidth
+    //                         ));
+    //                         newX = lastPosition + this.options.gap;
+    //                     }
+    //                 } else {
+    //                     if (currentX > containerRect.width) {
+    //                         const firstPosition = Math.min(...this.items.map(i =>
+    //                             this.getItemPosition(i)
+    //                         ));
+    //                         newX = firstPosition - itemWidth - this.options.gap;
+    //                     }
+    //                 }
+    //
+    //                 item.style.transform = `translateX(${newX}px)`;
+    //             });
+    //         } else {
+    //             if (pauseStartTime === null) {
+    //                 pauseStartTime = currentTime;
+    //             }
+    //         }
+    //
+    //         this.animationFrame = requestAnimationFrame(animate);
+    //     };
+    //
+    //     this.animationFrame = requestAnimationFrame(animate);
+    // }
 
-        const animate = (currentTime) => {
-            if (!this.isPaused) {
-                if (pauseStartTime !== null) {
-                    accumulatedPauseTime = currentTime - pauseStartTime;
-                    lastTime = currentTime - accumulatedPauseTime;
-                    pauseStartTime = null;
-                }
+//     setupEventListeners() {
+//         // Configurar eventos de pausa al hover
+//         this.carouselContainer.addEventListener('mouseenter', () => {
+//             this.isPaused = true;
+//         });
+//
+//         this.carouselContainer.addEventListener('mouseleave', () => {
+//             this.isPaused = false;
+//         });
+//
+//         Manejar redimensionamiento de ventana
+//         window.addEventListener('resize', () => {
+//             this.handleResize();
+//         });
+//     }
 
-                const deltaTime = (currentTime - lastTime - accumulatedPauseTime);
-                lastTime = currentTime - accumulatedPauseTime;
+    // handleResize() {
+    //     const containerWidth = this.carouselContainer.offsetWidth;
+    //     this.totalWidth = this.calculateTotalWidth();
+    //
+    //     if (this.totalWidth < containerWidth * 2) {
+    //         this.loadInitialImages();
+    //     }
+    // }
 
-                const speed = this.options.direction === 'left' ? -1 : 1;
-                const easeFactor = pauseStartTime === null ? 1 : Math.min((currentTime - lastTime) / 500, 1);
-                const moveAmount = (speed * this.options.speed * deltaTime * easeFactor) / 16;
-
-                this.items.forEach(item => {
-                    const currentX = this.getItemPosition(item);
-                    const itemWidth = item.offsetWidth;
-                    const containerRect = this.carouselContainer.getBoundingClientRect();
-
-                    let newX = currentX + moveAmount;
-
-                    if (this.options.direction === 'left') {
-                        if (currentX + itemWidth < 0) {
-                            const lastPosition = Math.max(...this.items.map(i =>
-                                this.getItemPosition(i) + i.offsetWidth
-                            ));
-                            newX = lastPosition + this.options.gap;
-                        }
-                    } else {
-                        if (currentX > containerRect.width) {
-                            const firstPosition = Math.min(...this.items.map(i =>
-                                this.getItemPosition(i)
-                            ));
-                            newX = firstPosition - itemWidth - this.options.gap;
-                        }
-                    }
-
-                    item.style.transform = `translateX(${newX}px)`;
-                });
-            } else {
-                if (pauseStartTime === null) {
-                    pauseStartTime = currentTime;
-                }
-            }
-
-            this.animationFrame = requestAnimationFrame(animate);
-        };
-
-        this.animationFrame = requestAnimationFrame(animate);
-    }
-
-    setupEventListeners() {
-        // Configurar eventos de pausa al hover
-        this.carouselContainer.addEventListener('mouseenter', () => {
-            this.isPaused = true;
-        });
-
-        this.carouselContainer.addEventListener('mouseleave', () => {
-            this.isPaused = false;
-        });
-
-        // Manejar redimensionamiento de ventana
-        window.addEventListener('resize', () => {
-            this.handleResize();
-        });
-    }
-
-    handleResize() {
-        const containerWidth = this.carouselContainer.offsetWidth;
-        this.totalWidth = this.calculateTotalWidth();
-
-        if (this.totalWidth < containerWidth * 2) {
-            this.loadInitialImages();
-        }
-    }
-
-    destroy() {
-        if (this.animationFrame) {
-            cancelAnimationFrame(this.animationFrame);
-        }
-        this.items = [];
-        while (this.carouselContainer.firstChild) {
-            this.carouselContainer.firstChild.remove();
-        }
-    }
+    // destroy() {
+    //     if (this.animationFrame) {
+    //         cancelAnimationFrame(this.animationFrame);
+    //     }
+    //     this.items = [];
+    //     while (this.carouselContainer.firstChild) {
+    //         this.carouselContainer.firstChild.remove();
+    //     }
+    // }
 }
 
 class GalleriesManager {
@@ -276,10 +272,10 @@ class GalleriesManager {
             const container = document.getElementById(config.id);
             if (container) {
                 this.instances.push(new ContinuousCarousel(container, config.items, {
-                    direction: index % 2 === 0 ? 'left' : 'right',
+                    // direction: index % 2 === 0 ? 'left' : 'right',
                     speed: 0.5,
                     title: config.title,
-                    titlePosition: index % 2 === 0 ? 'left' : 'right',
+                    // titlePosition: index % 2 === 0 ? 'left' : 'right',
                     color: getCurrentCase()?.color || '#66CC66',
                     id: config.id
                 }));
@@ -287,10 +283,10 @@ class GalleriesManager {
         });
     }
 
-    destroy() {
-        this.instances.forEach(instance => instance.destroy());
-        this.instances = [];
-    }
+    // destroy() {
+    //     this.instances.forEach(instance => instance.destroy());
+    //     this.instances = [];
+    // }
 }
 
 // Inicializar cuando el DOM esté listo

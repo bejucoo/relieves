@@ -1,4 +1,8 @@
 /* ========= RESETS Y ESTILOS BASE ========= */
+* {
+	box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -110,7 +114,7 @@ h1 {
 /* ========= TICKER DE INFORMACIÓN ========= */
 .info-ticker-container {
     position: fixed;
-    top: 100px;
+    top: 80px;
     left: 0;
     right: 0;
     height: 30px;
@@ -256,10 +260,10 @@ h1 {
 /* ========= GALLERIES ========= */
 .galleries-container {
     position: fixed;
-    top: 130px;
+    top: 120px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -269,6 +273,7 @@ h1 {
     position: relative;
     display: flex;
     overflow: hidden;
+	gap: 20px;
 }
 
 .gallery-title {
@@ -310,14 +315,17 @@ h1 {
 }
 
 .carousel-container {
+	display: flex;
     flex: 1;
     position: relative;
-    overflow: hidden;
     height: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scrollbar-width: none;
+	gap: 20px;
 }
 
 .carousel-item {
-    position: absolute;
     height: calc(100% - 20px);
     margin: 10px 0;
     will-change: transform;

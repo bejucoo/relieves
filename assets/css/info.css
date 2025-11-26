@@ -1,4 +1,8 @@
 /* ========= ESTILOS BASE ========= */
+* {
+	box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +16,19 @@ h1 {
     color: #1C3B2D;
     margin: 0;
 }
+
+h2 {
+	margin: 0;
+}
+
+hr {
+	max-width: 1200px;
+	margin-bottom: 60px;
+	color: #00000024
+}
+
+
+
 /* ========= SECCIONES ========= */
 .info-container {
 	margin-top: 110px;
@@ -34,6 +51,47 @@ h1 {
     margin-bottom: 24px;
 }
 
+.info-img img,
+.info-text {
+	width: 100%;
+}
+
+.multiple-img {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+
+
+
+/* ========= CASES ========= */
+.info-case {
+	height: 100%;
+	display: grid;
+	padding: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	border-radius: 10px;
+	background: rgba(244, 244, 244);
+}
+
+.info-case:hover {
+	box-shadow: 0 0 8px var(--shadow-color);
+}
+
+.case-data {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+}
+
+.case-name {
+	color: #1C3B2D;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 0;
+}
+
+
 /* ========= VIDEO ========= */
 .video-wrapper {
     position: relative;
@@ -53,6 +111,8 @@ h1 {
     border: none;
 }
 
+
+
 /* ========= TEXTO ========= */
 .long-text {
     max-width: 800px;
@@ -71,9 +131,12 @@ h1 {
     margin-bottom: 0;
 }
 
+
+
 /* ========= MEDIA QUERIES ========= */
 @media screen and (max-width: 768px) {
     .info-section {
+		grid-template-columns: 1fr;
         padding: 0 16px;
         margin-bottom: 40px;
     }
@@ -87,20 +150,8 @@ h1 {
         font-size: 15px;
         line-height: 1.6;
     }
-}
 
-@media screen and (max-width: 480px) {
-    .info-section {
-        padding: 0 12px;
-        margin-bottom: 30px;
-    }
-
-    .info-section h2 {
-        font-size: 22px;
-        margin-bottom: 16px;
-    }
-
-    .long-text p {
-        font-size: 14px;
-    }
+    .multiple-img {
+		gap: 15px;
+	}
 }

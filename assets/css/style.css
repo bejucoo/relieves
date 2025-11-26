@@ -1,4 +1,8 @@
 /* ========= ESTILOS GENERALES ========= */
+* {
+	box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -175,7 +179,7 @@ body.menu-open #user-altitude {
     margin-left: 10px;
     position: fixed;
     left: 33px;
-    top: 110px;
+    top: 90px;
     bottom: 100px;
     width: 1px;
     z-index: 999;
@@ -238,7 +242,7 @@ body.menu-open #user-altitude {
     gap: 15px;
     padding: 15px;
     margin-left: calc(33px + 29px + 20px);
-    margin-top: 95px;
+    margin-top: 80px;
 }
 
 .case-image {
