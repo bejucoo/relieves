@@ -126,9 +126,11 @@ h1 {
 .info-ticker {
     white-space: nowrap;
     display: inline-block;
+	will-change: transform;
     animation: tickerScroll 30s linear infinite;
     height: 100%;
     line-height: 30px;
+	transform: translateZ(0);
 }
 
 .info-ticker:hover {
@@ -328,7 +330,6 @@ h1 {
 .carousel-item {
     height: calc(100% - 20px);
     margin: 10px 0;
-    will-change: transform;
     cursor: pointer;
     transform: translateZ(0);
     backface-visibility: hidden;
