@@ -412,8 +412,8 @@ h1 {
     flex: 1;
     min-width: 0;
     position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
+    /*padding-bottom: 56.25%;*/
+    /*height: 0;*/
     overflow: hidden;
 }
 

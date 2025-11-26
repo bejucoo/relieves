@@ -84,8 +84,8 @@
     position: relative;
     width: 100%;
     min-width: 0; /* Permite que el contenedor se encoja */
-    height: 0;
-    padding-bottom: 56.25%;
+    height: 100%;
+    /*padding-bottom: 56.25%;*/
     overflow: hidden;
 }
 
