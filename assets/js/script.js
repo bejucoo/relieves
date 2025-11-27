@@ -202,7 +202,14 @@ function getOptimizedImageUrl(url, options = {}) {
         'c_limit'
     ].join(',');
 
-    return url.replace('/upload/', `/upload/${transformations}/`);
+    // return url.replace('/upload/', `/upload/${transformations}/`);
+
+	const cleanedUrl = url.replace(/\/upload\/(?:[^/]+\/)?(v\d+\/)/, '/upload/$1');
+
+    return cleanedUrl.replace(
+        /\/upload\//,
+        `/upload/${transformations}/`
+    );
 }
 
 
@@ -440,8 +447,9 @@ const mobileMenu = document.getElementById('mobile-menu');
 function loadOptimizedImages() {
     const viewportWidth = window.innerWidth;
     const options = {
-        width: viewportWidth < 768 ? 400 : 
-               viewportWidth < 1200 ? 800 : 1200,
+        // width: viewportWidth < 768 ? 400 :
+        //        viewportWidth < 1200 ? 800 : 1200,
+		width: 300,
         quality: 'auto',
         format: 'auto'
     };
@@ -454,18 +462,19 @@ function loadOptimizedImages() {
     });
 }
 
-function preloadCriticalImages() {
-    const criticalImages = caseStudies.slice(0, 3).flatMap(study => study.images);
-    criticalImages.forEach(src => {
-        const optimizedSrc = getOptimizedImageUrl(src, {
-            width: window.innerWidth < 768 ? 400 : 800,
-            quality: 'auto',
-            format: 'auto'
-        });
-        const img = new Image();
-        img.src = optimizedSrc;
-    });
-}
+// function preloadCriticalImages() {
+//     const criticalImages = caseStudies.slice(0, 3).flatMap(study => study.images);
+//     criticalImages.forEach(src => {
+//         const optimizedSrc = getOptimizedImageUrl(src, {
+//             // width: window.innerWidth < 768 ? 400 : 800,
+// 			width: 300,
+//             quality: 'auto',
+//             format: 'auto'
+//         });
+//         const img = new Image();
+//         img.src = optimizedSrc;
+//     });
+// }
 
 // ==========================================
 // FUNCIONES DE YOUTUBE Y OVERLAY
@@ -788,7 +797,8 @@ function loadImages() {
                             const img = entry.target.querySelector('img');
                             if (img?.dataset.src) {
                                 img.src = getOptimizedImageUrl(img.dataset.src, {
-                                    width: window.innerWidth < 768 ? 400 : 800,
+                                    // width: window.innerWidth < 768 ? 400 : 800,
+									width: 300,
                                     quality: 'auto',
                                     format: 'auto'
                                 });
@@ -802,7 +812,8 @@ function loadImages() {
             observer.observe(container);
         } else {
             img.src = getOptimizedImageUrl(img.dataset.src, {
-                width: window.innerWidth < 768 ? 400 : 800,
+                // width: window.innerWidth < 768 ? 400 : 800,
+				width: 300,
                 quality: 'auto',
                 format: 'auto'
             });
@@ -1097,7 +1108,7 @@ function initializeMainPage() {
     }
 
     loadOptimizedImages();
-    preloadCriticalImages();
+    //preloadCriticalImages();
 }
 
 // Manejador global de errores

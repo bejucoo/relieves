@@ -29,19 +29,19 @@ hr {
 
 
 
-/* ========= SECCIONES ========= */
+/* ========= INFO ========= */
 .info-container {
-	margin-top: 110px;
+	margin-top: 90px;
 }
 
 .info-section {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 30px;
-    max-width: 1200px;
+	grid-template-columns: 1fr;
+	max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     margin-bottom: 60px;
+	gap: 30px;
 }
 
 .info-section h2 {
@@ -54,23 +54,61 @@ hr {
 .info-img img,
 .info-text {
 	width: 100%;
+	border-radius: 5px;
+}
+
+.info-img-people {
+	border-radius: 5px;
+	filter: grayscale();
+	aspect-ratio: 16/9;
+	object-fit: cover;
+}
+
+.info-title-people {
+	margin-top: 5px;
 }
 
 .multiple-img {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 30px;
+	gap: 20px;
+}
+
+.carousel-img {
+	display: flex;
+	gap: 20px;
+	overflow-x: scroll;
+	max-width: 100%;
+	scrollbar-width: none;
+}
+
+.carousel-img img {
+	width: unset;
+	height: 200px;
+	aspect-ratio: 16/9;
+	object-fit: cover;
 }
 
 
 
 /* ========= CASES ========= */
+.info-section-case {
+	display: grid;
+	grid-template-columns: 0.65fr 0.35fr;
+	column-gap: 20px;
+	row-gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
 .info-case {
 	height: 100%;
 	display: grid;
 	padding: 30px;
 	grid-template-columns: repeat(2, 1fr);
-	border-radius: 10px;
+	border-radius: 5px;
 	background: rgba(244, 244, 244);
 }
 
@@ -89,6 +127,10 @@ hr {
 	font-size: 18px;
 	font-weight: 300;
 	margin: 0;
+}
+
+.case-details {
+	align-content: end;
 }
 
 
@@ -135,7 +177,7 @@ hr {
 
 /* ========= MEDIA QUERIES ========= */
 @media screen and (max-width: 768px) {
-    .info-section {
+    .info-section-case {
 		grid-template-columns: 1fr;
         padding: 0 16px;
         margin-bottom: 40px;
@@ -153,5 +195,9 @@ hr {
 
     .multiple-img {
 		gap: 15px;
+	}
+
+	.carousel-img img {
+		height: 150px;
 	}
 }
