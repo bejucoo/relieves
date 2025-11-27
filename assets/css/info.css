@@ -54,11 +54,9 @@ hr {
 .info-img img,
 .info-text {
 	width: 100%;
-	border-radius: 5px;
 }
 
 .info-img-people {
-	border-radius: 5px;
 	filter: grayscale();
 	aspect-ratio: 16/9;
 	object-fit: cover;
@@ -108,8 +106,8 @@ hr {
 	display: grid;
 	padding: 30px;
 	grid-template-columns: repeat(2, 1fr);
-	border-radius: 5px;
 	background: rgba(244, 244, 244);
+	border-radius: 10px;
 }
 
 .info-case:hover {

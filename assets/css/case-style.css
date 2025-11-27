@@ -306,7 +306,6 @@ h1 {
     bottom: 10px;
     width: 8px;
     background-color: var(--case-color);
-	border-radius: 2px;
 }
 
 .gallery-title.left::before {
@@ -343,7 +342,6 @@ h1 {
     aspect-ratio: 16/9;
     object-fit: cover;
     transition: transform 0.3s ease;
-	border-radius: 5px;
 }
 
 .carousel-item:hover img {

@@ -52,7 +52,6 @@
     object-fit: contain;
     display: block;
     margin: 0 auto;
-	border-radius: 5px;
 }
 
 .lightbox-caption {
@@ -65,7 +64,7 @@
     font-size: 14px;
     font-weight: 300;
     width: 100%;
-    text-align: left;
+    text-align: center !important;
 }
 
 /* ========= VIDEO AND CHAPTERS ========= */
