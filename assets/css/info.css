@@ -70,7 +70,7 @@ hr {
 .multiple-img {
 	padding: 30px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(4, 0.25fr);
 	gap: 20px;
 	background: rgb(244, 244, 244);
 	border-radius: 0 0 10px 10px;
