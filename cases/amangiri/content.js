@@ -107,57 +107,57 @@ const galleryConfigs = [
         "title": "Planimetría",
         "items": [
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260589/AMANGIRI_PLANIMETRIA_1920X1080_PLANTAGENERAL__y2so56.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721321/AMANGIRI_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_szqalf.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260589/AMANGIRI_PLANIMETRIA_1920X1080_PLANTAGENERAL__y2so56.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238909/AMANGIRI_PLANIMETRIA_1920X1080_PLANTAGENERAL___xnwypy.gif",
             "index": 1
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260513/AMANGIRI_PLANIMETRIA_1920X1080_GIRASOLPLANTA__dz7pr4.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721321/AMANGIRI_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_d3xhj6.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260513/AMANGIRI_PLANIMETRIA_1920X1080_GIRASOLPLANTA__dz7pr4.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238892/AMANGIRI_PLANIMETRIA_1920X1080_GIRASOLPLANTA___id1etz.gif",
             "index": 2
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260556/AMANGIRI_PLANIMETRIA_1920X1080_CORTE__hzimnc.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721319/AMANGIRI_MINIATURAS_PLANIMETRIA_CORTE_fa6yaw.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260556/AMANGIRI_PLANIMETRIA_1920X1080_CORTE__hzimnc.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238881/AMANGIRI_PLANIMETRIA_1920X1080_CORTE___f1qc0x.gif",
             "index": 3
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260475/AMANGIRI_PLANIMETRIA_1920X1080_GIRASOLCORTE__yezcm4.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721320/AMANGIRI_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_nk82lz.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260475/AMANGIRI_PLANIMETRIA_1920X1080_GIRASOLCORTE__yezcm4.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238885/AMANGIRI_PLANIMETRIA_1920X1080_GIRASOLCORTE___spbwca.gif",
             "index": 4
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125397/AMANGIRI_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_pm0rqh.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721319/AMANGIRI_MINIATURAS_PLANIMETRIA_AXOGENERAL_fpkxsp.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125397/AMANGIRI_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_pm0rqh.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238895/AMANGIRI_PLANIMETRIA_1920X1080_AXOGENERAL_GIF__m27ehw.gif",
             "index": 5
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260651/AMANGIRI_PLANIMETRIA_1920X1080_DETALLECORTE1__ofwglg.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721320/AMANGIRI_MINIATURAS_PLANIMETRIA_DETALLECORTE1_ki2isa.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260651/AMANGIRI_PLANIMETRIA_1920X1080_DETALLECORTE1__ofwglg.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238898/AMANGIRI_PLANIMETRIA_1920X1080_DETALLECORTE1___aaxpht.gif",
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260630/AMANGIRI_PLANIMETRIA_1920X1080_DETALLECORTE2__vldium.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721320/AMANGIRI_MINIATURAS_PLANIMETRIA_DETALLECORTE2_j5cm6i.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260630/AMANGIRI_PLANIMETRIA_1920X1080_DETALLECORTE2__vldium.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238888/AMANGIRI_PLANIMETRIA_1920X1080_DETALLECORTE2___zpzsfb.gif",
             "index": 7
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260380/AMANGIRI_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__vmy4bs.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721319/AMANGIRI_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_ocgypa.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260380/AMANGIRI_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__vmy4bs.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238902/AMANGIRI_PLANIMETRIA_1920X1080_DETALLEEXTERIOR_uoa7gt.gif",
             "index": 8
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260413/AMANGIRI_PLANIMETRIA_1920X1080_DETALLE3DINTERIOR__an33aq.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738721320/AMANGIRI_MINIATURAS_PLANIMETRIA_DETALLE3DINTERIOR_pzditm.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260413/AMANGIRI_PLANIMETRIA_1920X1080_DETALLE3DINTERIOR__an33aq.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238905/AMANGIRI_PLANIMETRIA_1920X1080_DETALLEINTERIOR_xyiahc.gif",
             "index": 9
           },
           {
@@ -437,9 +437,9 @@ const galleryConfigs = [
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715846/casa-en-piedra-adobe-acero-clima-psicometrica-00_pemaul.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922608/casa-en-piedra-adobe-acero-clima-psicometrica-00_pemaul_cobd1s.gif",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715846/casa-en-piedra-adobe-acero-clima-psicometrica-00_pemaul.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922608/casa-en-piedra-adobe-acero-clima-psicometrica-00_pemaul_cobd1s.gif",
             "index": 7
           }
         ]
@@ -447,7 +447,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

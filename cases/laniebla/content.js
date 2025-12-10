@@ -100,51 +100,51 @@ const galleryConfigs = [
         "title": "Planimetría",
         "items": [
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302036/NIEBLA_PLANIMETRIA_1920X1080_PLANTAGENERAL__otf8hc.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738765721/NIEBLA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_fdwhip.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302036/NIEBLA_PLANIMETRIA_1920X1080_PLANTAGENERAL__otf8hc.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239353/NIEBLA_PLANIMETRIA_1920X1080_PLANTAGENERAL__cs5kon.gif",
             "index": 1
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302024/NIEBLA_PLANIMETRIA_1920X1080_GIRASOLPLANTA__r9uhcy.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738765721/NIEBLA_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_d761sn.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302024/NIEBLA_PLANIMETRIA_1920X1080_GIRASOLPLANTA__r9uhcy.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239349/NIEBLA_PLANIMETRIA_1920X1080_GIRASOLPLANTA___ihtmqk.gif",
             "index": 2
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312060/NIEBLA_A_ezlvnb.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738765719/NIEBLA_MINIATURAS_PLANIMETRIA_CORTE_g97eom.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312060/NIEBLA_A_ezlvnb.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239330/NIEBLA_PLANIMETRIA_1920X1080_CORTE__lh8gtk.gif",
             "index": 3
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302074/NIEBLA_PLANIMETRIA_1920X1080_GIRASOLCORTE__dlvhda.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738765720/NIEBLA_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_uwudii.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302074/NIEBLA_PLANIMETRIA_1920X1080_GIRASOLCORTE__dlvhda.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239345/NIEBLA_PLANIMETRIA_1920X1080_GIRASOLCORTE___xljjxc.gif",
             "index": 4
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125817/NIEBLA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_xhdie9.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738765720/NIEBLA_MINIATURAS_PLANIMETRIA_AXOGENERAL_eqjggy.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125817/NIEBLA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_xhdie9.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239326/NIEBLA_PLANIMETRIA_1920X1080_AXOGENERAL__h4rfrc.gif",
             "index": 5
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312063/NIEBLA_C_awit4j.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738765720/NIEBLA_MINIATURAS_PLANIMETRIA_DETALLECORTE1_svdut6.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312063/NIEBLA_C_awit4j.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239333/NIEBLA_PLANIMETRIA_1920X1080_DETALLECORTE1__bspaen.gif",
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312062/NIEBLA_D_bmev4m.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738765720/NIEBLA_MINIATURAS_PLANIMETRIA_DETALLECORTE2_ps6kih.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312062/NIEBLA_D_bmev4m.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239341/NIEBLA_PLANIMETRIA_1920X1080_DETALLECORTE2__itbfry.gif",
             "index": 7
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312065/NIEBLA_B_v2nwcx.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738765720/NIEBLA_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_rk77cf.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312065/NIEBLA_B_v2nwcx.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239337/NIEBLA_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__abtg4m.gif",
             "index": 8
           },
           {
@@ -380,9 +380,9 @@ const galleryConfigs = [
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715913/tiny-house-clima-psicometrica-00_biyuje.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923239/tiny-house-clima-psicometrica-00_biyuje_jbp9jy.gif",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715913/tiny-house-clima-psicometrica-00_biyuje.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923239/tiny-house-clima-psicometrica-00_biyuje_jbp9jy.gif",
             "index": 7
           }
         ]
@@ -390,7 +390,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

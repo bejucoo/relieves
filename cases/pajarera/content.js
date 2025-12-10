@@ -101,45 +101,45 @@ const galleryConfigs = [
     "title": "Planimetría",
     "items": [
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302288/PAJARERA_PLANIMETRIA_1920X1080_PLANTAGENERAL__p380db.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738771620/PAJARERA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_yqkcct.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302288/PAJARERA_PLANIMETRIA_1920X1080_PLANTAGENERAL__p380db.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239474/PAJARERA_PLANIMETRIA_1920X1080_PLANTAGENERAL___jarv0z.gif",
         "index": 1
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302336/PAJARERA_PLANIMETRIA_1920X1080_GIRASOLPLANTA__ynadks.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738771616/PAJARERA_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_bpl3lt.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302336/PAJARERA_PLANIMETRIA_1920X1080_GIRASOLPLANTA__ynadks.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239470/PAJARERA_PLANIMETRIA_1920X1080_GIRASOLPLANTA___h5eknc.gif",
         "index": 2
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302310/PAJARERA_PLANIMETRIA_1920X1080_CORTE__uvrnfo.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738771608/PAJARERA_MINIATURAS_PLANIMETRIA_CORTE_oihwzp.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302310/PAJARERA_PLANIMETRIA_1920X1080_CORTE__uvrnfo.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239458/PAJARERA_PLANIMETRIA_1920X1080_CORTE___er7dhr.gif",
         "index": 3
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302275/PAJARERA_PLANIMETRIA_1920X1080_GIRASOLCORTE__phnbof.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738771614/PAJARERA_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_cxwrym.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302275/PAJARERA_PLANIMETRIA_1920X1080_GIRASOLCORTE__phnbof.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239466/PAJARERA_PLANIMETRIA_1920X1080_GIRASOLCORTE__cvouxb.gif",
         "index": 4
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125864/PAJARERA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_lkcakm.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738771606/PAJARERA_MINIATURAS_PLANIMETRIA_AXOGENERAL_vszygl.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125864/PAJARERA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_lkcakm.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239451/PAJARERA_PLANIMETRIA_1920X1080_AXOGENERAL__n8irkt.gif",
         "index": 5
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759310020/PAJARERA_B_p0blcy.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738771612/PAJARERA_MINIATURAS_PLANIMETRIA_DETALLECORTE1_k3eqft.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759310020/PAJARERA_B_p0blcy.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239454/PAJARERA_PLANIMETRIA_1920X1080_DETALLECORTE1__sdaf8f.gif",
         "index": 6
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759309988/PAJARERA_A_wkskhf.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738771610/PAJARERA_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_j5aplr.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759309988/PAJARERA_A_wkskhf.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239462/PAJARERA_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__sy9cp0.gif",
         "index": 7
       },
       {
@@ -382,9 +382,9 @@ const galleryConfigs = [
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715713/casa-en-construccion-liviana-clima-psicometrica-00_zocgd2.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923323/casa-en-construccion-liviana-clima-psicometrica-00_zocgd2_xebb1w.gif",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715713/casa-en-construccion-liviana-clima-psicometrica-00_zocgd2.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923323/casa-en-construccion-liviana-clima-psicometrica-00_zocgd2_xebb1w.gif",
             "index": 7
           }
         ]
@@ -392,7 +392,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

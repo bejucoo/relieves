@@ -60,100 +60,93 @@ const galleryConfigs = [
         title: "Planimetría",
         items: [
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759300277/JAPON_PLANIMETRIA_1920X1080_PLANTAGENERAL__kr2uds.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362053/JAPON_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_d3xpmk.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759300277/JAPON_PLANIMETRIA_1920X1080_PLANTAGENERAL__kr2uds.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239159/JAPON_PLANIMETRIA_1920X1080_PLANTAGENERAL___r4uezr.gif',
                 title: 'Planta General',
                 index: 1
 
             },
-
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759300186/JAPON_PLANIMETRIA_1920X1080_GIRASOLPLANTA__un1nhv.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362050/JAPON_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_yaboxv.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759300186/JAPON_PLANIMETRIA_1920X1080_GIRASOLPLANTA__un1nhv.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239163/JAPON_PLANIMETRIA_1920X1080_GIRASOLPLANTA___a0ibli.gif',
                 index: 2
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759300232/JAPON_PLANIMETRIA_1920X1080_DETALLECORTE1__jyqccw.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362041/JAPON_MINIATURAS_PLANIMETRIA_CORTE_uxieqc.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759300232/JAPON_PLANIMETRIA_1920X1080_DETALLECORTE1__jyqccw.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239129/JAPON_PLANIMETRIA_1920X1080_DETALLECORTE__mtns9h.gif',
                 index: 3
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759300359/JAPON_PLANIMETRIA_1920X1080_GIRASOLCORTE__yzecrj.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362049/JAPON_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_xkk4gf.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759300359/JAPON_PLANIMETRIA_1920X1080_GIRASOLCORTE__yzecrj.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239167/JAPON_PLANIMETRIA_1920X1080_GIRASOLCORTE___p901m2.gif',
                 index: 4
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125641/JAP%C3%93N_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_vyec1y.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362041/JAPON_MINIATURAS_PLANIMETRIA_AXOGENERAL_uoumsj.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125641/JAP%C3%93N_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_vyec1y.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239133/JAP%C3%93N_PLANIMETRIA_1920X1080_AXOGENERAL__meppim.gif',
                 index: 5
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311740/JAPON_C_qbwa2e.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362048/JAPON_MINIATURAS_PLANIMETRIA_DETALLECORTE2C_yfrhdh.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311740/JAPON_C_qbwa2e.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239155/JAPON_PLANIMETRIA_1920X1080_DETALLECORTE2C__lmmhej.gif',
                 index: 6
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311755/JAPON_D_vworkh.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362045/JAPON_MINIATURAS_PLANIMETRIA_DETALLECORTE2A_cc1skt.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311755/JAPON_D_vworkh.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239148/JAPON_PLANIMETRIA_1920X1080_DETALLECORTE2A__yfor3c.gif',
                 index: 7
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311759/JAPON_E_cdrxtg.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362047/JAPON_MINIATURAS_PLANIMETRIA_DETALLECORTE2B_xhc6mm.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311759/JAPON_E_cdrxtg.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239145/JAPON_PLANIMETRIA_1920X1080_DETALLECORTE2B__dhvrty.gif',
                 index: 8
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311761/JAPON_F_ndgcxg.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362042/JAPON_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_gtrg1v.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311761/JAPON_F_ndgcxg.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239151/JAPON_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__xguiwk.gif',
                 index: 9
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311747/JAPON_A_ixaxh5.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362043/JAPON_MINIATURAS_PLANIMETRIA_DETALLE3DINTERIOR_orvx7x.png',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311747/JAPON_A_ixaxh5.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239141/JAPON_PLANIMETRIA_1920X1080_DETALLE3DINTERIOR__nfmxmy.gif',
                 index: 10
-            },
-            {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311743/JAPON_B_ayxbmu.gif',
-                type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759311743/JAPON_B_ayxbmu.gif',
-                index: 11
             },
             {
                 thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362041/JAPON_MINIATURAS_PLANIMETRIA_MODELOS3D_qezhk9.png',
                 type: 'model',
                 modelUrl: '../../cases/japon/media/models/Centro del Japón modelo 3D.obj',
-                index: 12
+                index: 11
             }
             ,
             {
                 thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362041/JAPON_MINIATURAS_PLANIMETRIA_MODELOS3D_qezhk9.png',
                 type: 'model',
                 modelUrl: '../../cases/japon/media/models/02 Centro del Japon_Base.obj',
-                index: 13
+                index: 12
             }
             ,
             {
                 thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362041/JAPON_MINIATURAS_PLANIMETRIA_MODELOS3D_qezhk9.png',
                 type: 'model',
                 modelUrl: '../../cases/japon/media/models/02 Centro del Japon_Exterior.obj',
-                index: 14
+                index: 13
             }
             ,
             {
                 thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738362041/JAPON_MINIATURAS_PLANIMETRIA_MODELOS3D_qezhk9.png',
                 type: 'model',
                 modelUrl: '../../cases/japon/media/models/02 Centro del Japon_Interior.obj',
-                index: 15
+                index: 14
             }
         ]
     },
@@ -355,9 +348,9 @@ const galleryConfigs = [
                 index: 6
             },
             {
-                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715511/centro-cultural-grc-clima-psicometrica-00_ajwple.gif',
+                thumbnail: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922832/centro-cultural-grc-clima-psicometrica-00_ajwple_qwplul.gif',
                 type: 'image',
-                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715511/centro-cultural-grc-clima-psicometrica-00_ajwple.gif',
+                fullContent: 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922832/centro-cultural-grc-clima-psicometrica-00_ajwple_qwplul.gif',
                 index: 7
             }
         ]
@@ -365,7 +358,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

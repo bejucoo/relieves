@@ -103,76 +103,70 @@ const galleryConfigs = [
         "title": "Planimetría",
         "items": [
           {
-            "thumbnail": "hhttps://res.cloudinary.com/dmqyn1ic8/image/upload/v1759256191/ADOBE_PLANIMETRIA_1920X1080_PLANTAGENERAL__cxbqsy.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718784/ADOBE_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_sm3gdt.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759256191/ADOBE_PLANIMETRIA_1920X1080_PLANTAGENERAL__cxbqsy.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238767/ADOBE_PLANIMETRIA_1920X1080_PLANTAGENERAL___piaji4.gif",
             "index": 1
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759256233/ADOBE_PLANIMETRIA_1920X1080_GIRASOLPLANTA__npj1qc.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718781/ADOBE_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_xliqci.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759256233/ADOBE_PLANIMETRIA_1920X1080_GIRASOLPLANTA__npj1qc.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238782/ADOBE_PLANIMETRIA_1920X1080_GIRASOLPLANTA___h3hpzp.gif",
             "index": 2
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759256490/ADOBE_PLANIMETRIA_1920X1080_CORTE__m1oga7.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718774/ADOBE_MINIATURAS_PLANIMETRIA_CORTE_nmcynq.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759256490/ADOBE_PLANIMETRIA_1920X1080_CORTE__m1oga7.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238759/ADOBE_PLANIMETRIA_1920X1080_CORTE___roxfoy.gif",
             "index": 3
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759256401/ADOBE-angulos-en-corte-_xtixih.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718779/ADOBE_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_x8r99w.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759256401/ADOBE-angulos-en-corte-_xtixih.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238776/ADOBE_PLANIMETRIA_1920X1080_GIRASOLCORTE__tn0cz1.gif",
             "index": 4
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125281/ADOBE_PLANIMETRIA_1920X1080_AXOGENERAL_vwy7k4_plv4s2.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718772/ADOBE_MINIATURAS_PLANIMETRIA_AXOGENERAL_xjf9cb.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125281/ADOBE_PLANIMETRIA_1920X1080_AXOGENERAL_vwy7k4_plv4s2.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238776/ADOBE_PLANIMETRIA_1920X1080_AXOGENERAL__zritxr.gif",
             "index": 5
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260209/ADOBE_PLANIMETRIA_1920X1080_DETALLECORTE1__ofzghf.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718777/ADOBE_MINIATURAS_PLANIMETRIA_DETALLECORTE1_ewoxsz.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260209/ADOBE_PLANIMETRIA_1920X1080_DETALLECORTE1__ofzghf.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238779/ADOBE_PLANIMETRIA_1920X1080_DETALLECORTE1_afsm4x.gif",
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260169/ADOBE_PLANIMETRIA_1920X1080_DETALLECORTE2__zlrk7l.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718778/ADOBE_MINIATURAS_PLANIMETRIA_DETALLECORTE2_fedrhi.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260169/ADOBE_PLANIMETRIA_1920X1080_DETALLECORTE2__zlrk7l.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238765/ADOBE_PLANIMETRIA_1920X1080_DETALLECORTE2_nqpycl.gif",
             "index": 7
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260263/ADOBE_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__hk9yhb.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718775/ADOBE_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_rgbhvo.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260263/ADOBE_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__hk9yhb.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238773/ADOBE_PLANIMETRIA_1920X1080_DETALLE_EXTERIOR_tc9qtd.gif",
             "index": 8
-          },
-                    {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718784/ADOBE_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_sm3gdt.png",
-            "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718909/ADOBE_PLANIMETRIA_1920X1080_PLANTAGENERAL_bgvrbo.png",
-            "index": 9
           },
           {
             "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718784/ADOBE_MINIATURAS_PLANIMETRIA_MODELOS3D_moa5jz.png",
             "type": "model",
             "modelUrl": "../../cases/adobe/media/models/06 CASA ADOBE GENERAL.obj",
-            "index": 10
+            "index": 9
           },
           {
             "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718784/ADOBE_MINIATURAS_PLANIMETRIA_MODELOS3D_moa5jz.png",
             "type": "model",
             "modelUrl": "../../cases/adobe/media/models/Adobe_Base.obj",
-            "index": 11
+            "index": 10
           },
           {
             "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738718784/ADOBE_MINIATURAS_PLANIMETRIA_MODELOS3D_moa5jz.png",
             "type": "model",
             "modelUrl": "../../cases/adobe/media/models/Adobe_Exterior.obj",
-            "index": 12
+            "index": 11
           }
         ]
       },
@@ -374,9 +368,9 @@ const galleryConfigs = [
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715397/casa-en-adobe-clima-psicometrica-00_aj9mlj.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922491/casa-en-adobe-clima-psicometrica-00_aj9mlj_th5f2s.gif",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715397/casa-en-adobe-clima-psicometrica-00_aj9mlj.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922491/casa-en-adobe-clima-psicometrica-00_aj9mlj_th5f2s.gif",
             "index": 7
           }
         ]
@@ -384,7 +378,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

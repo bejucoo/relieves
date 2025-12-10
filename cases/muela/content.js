@@ -103,45 +103,45 @@ const galleryConfigs = [
     "title": "Planimetría",
     "items": [
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759301053/MUELA_PLANIMETRIA_1920X1080_PLANTAGENERAL__baylu9.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738768542/MUELA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_m6udha.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759301053/MUELA_PLANIMETRIA_1920X1080_PLANTAGENERAL__baylu9.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239257/MUELA_PLANIMETRIA_1920X1080_PLANTAGENERAL___qem1rn.gif",
         "index": 1
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759301017/MUELA_PLANIMETRIA_1920X1080_GIRASOLPLANTA__pexhr6.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738768540/MUELA_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_awmbb3.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759301017/MUELA_PLANIMETRIA_1920X1080_GIRASOLPLANTA__pexhr6.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239249/MUELA_PLANIMETRIA_1920X1080_GIRASOLPLANTA___qupptp.gif",
         "index": 2
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759301035/MUELA_PLANIMETRIA_1920X1080_CORTE__gtxeyr.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738768535/MUELA_MINIATURAS_PLANIMETRIA_CORTE_dgnupf.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759301035/MUELA_PLANIMETRIA_1920X1080_CORTE__gtxeyr.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239234/MUELA_PLANIMETRIA_1920X1080_CORTE___qfrkpk.gif",
         "index": 3
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759301073/MUELA_PLANIMETRIA_1920X1080_GIRASOLCORTE__eml3qx.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738768538/MUELA_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_y2n8i6.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759301073/MUELA_PLANIMETRIA_1920X1080_GIRASOLCORTE__eml3qx.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239253/MUELA_PLANIMETRIA_1920X1080_GIRASOLCORTE___vf543j.gif",
         "index": 4
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125750/MUELA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_iw1br4.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738768533/MUELA_MINIATURAS_PLANIMETRIA_AXOGENERAL_tjtgvs.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125750/MUELA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_iw1br4.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239238/MUELA_PLANIMETRIA_1920X1080_AXOGENERAL__wk4hyg.gif",
         "index": 5
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759309886/MUELA_B_jcdxfk.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738768537/MUELA_MINIATURAS_PLANIMETRIA_DETALLECORTE1_ruq74i.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759309886/MUELA_B_jcdxfk.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239245/MUELA_PLANIMETRIA_1920X1080_DETALLECORTE1__svo82t.gif",
         "index": 6
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759309838/MUELA_A_izxskr.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239241/MUELA_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__hxt58l.gif",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759309838/MUELA_A_izxskr.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738768536/MUELA_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_rbkvxn.png",
         "index": 7
       },
       {
@@ -361,9 +361,9 @@ const galleryConfigs = [
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715591/casa-en-acero-y-madera-clima-psicometrica-00_s3xh6s.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923239/tiny-house-clima-psicometrica-00_biyuje_jbp9jy.gif",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715591/casa-en-acero-y-madera-clima-psicometrica-00_s3xh6s.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923239/tiny-house-clima-psicometrica-00_biyuje_jbp9jy.gif",
             "index": 7
           }
         ]
@@ -371,7 +371,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

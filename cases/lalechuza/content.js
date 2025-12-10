@@ -111,45 +111,45 @@ const galleryConfigs = [
         "title": "Planimetría",
         "items": [
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302783/VERJON_PLANIMETRIA_1920X1080_PLANTAGENERAL__akd9de.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738726074/VERJON_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_eoynhk.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302783/VERJON_PLANIMETRIA_1920X1080_PLANTAGENERAL__akd9de.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239718/VERJON_PLANIMETRIA_1920X1080_PLANTAGENERAL___wevdhr.gif",
             "index": 1
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302846/VERJON_PLANIMETRIA_1920X1080_GIRASOLPLANTA__sm4ysm.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738726070/VERJON_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_qhrslf.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302846/VERJON_PLANIMETRIA_1920X1080_GIRASOLPLANTA__sm4ysm.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239713/VERJON_PLANIMETRIA_1920X1080_GIRASOLPLANTA__zspr3l.gif",
             "index": 2
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312497/VERJON_A_l465ou.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738726062/VERJON_MINIATURAS_PLANIMETRIA_CORTE_rbk2xa.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312497/VERJON_A_l465ou.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239705/VERJON_PLANIMETRIA_1920X1080_CORTE__mbspij.gif",
             "index": 3
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302834/VERJON_PLANIMETRIA_1920X1080_GIRASOLCORTE__arbdpi.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738726068/VERJON_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_hgvlj0.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302834/VERJON_PLANIMETRIA_1920X1080_GIRASOLCORTE__arbdpi.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239709/VERJON_PLANIMETRIA_1920X1080_GIRASOLCORTE___y93qbt.gif",
             "index": 4
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758126018/VERJ%C3%93N_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_iimxzo.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738726060/VERJON_MINIATURAS_PLANIMETRIA_AXOGENERAL_mpzodg.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758126018/VERJ%C3%93N_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_iimxzo.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239692/VERJ%C3%93N_PLANIMETRIA_1920X1080_AXOGENERAL__j1bndy.gif",
             "index": 5
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312499/VERJON_C_httmwh.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738726066/VERJON_MINIATURAS_PLANIMETRIA_DETALLECORTE1_prjxw8.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312499/VERJON_C_httmwh.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239696/VERJON_PLANIMETRIA_1920X1080_DETALLECORTE1__q7buq8.gif",
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312495/VERJON_B_gvvne8.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738726064/VERJON_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_igj9lt.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312495/VERJON_B_gvvne8.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239700/VERJON_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__sjucrv.gif",
             "index": 7
           },
           {
@@ -366,9 +366,9 @@ const galleryConfigs = [
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752714921/tiny-house-en-madera-clima-psicometrica-00_xlz5fp.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923497/tiny-house-en-madera-clima-psicometrica-00_xlz5fp_lnbqcz.gif",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752714921/tiny-house-en-madera-clima-psicometrica-00_xlz5fp.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923497/tiny-house-en-madera-clima-psicometrica-00_xlz5fp_lnbqcz.gif",
             "index": 7
           }
         ]
@@ -376,7 +376,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

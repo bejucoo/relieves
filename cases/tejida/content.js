@@ -101,57 +101,57 @@ const galleryConfigs = [
   "title": "Planimetría",
   "items": [
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302633/TEJIDA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL__h8u4sk.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773511/TEJIDA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_uqidj3.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302633/TEJIDA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL__h8u4sk.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239622/TEJIDA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL__dmtlrt.gif",
       "index": 1
     },
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302621/TEJIDA_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA__lzas2a.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773505/TEJIDA_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_yryu36.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302621/TEJIDA_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA__lzas2a.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239618/TEJIDA_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA___yyfrnl.gif",
       "index": 2
     },
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312299/TEJIDA_A_dvgx3x.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773487/TEJIDA_MINIATURAS_PLANIMETRIA_CORTE_iuwme4.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312299/TEJIDA_A_dvgx3x.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239567/TEJIDA_MINIATURAS_PLANIMETRIA_CORTE__enstei.gif",
       "index": 3
     },
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302649/TEJIDA_MINIATURAS_PLANIMETRIA_GIRASOLCORTE__felhd5.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773502/TEJIDA_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_tj7vq9.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759302649/TEJIDA_MINIATURAS_PLANIMETRIA_GIRASOLCORTE__felhd5.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239614/TEJIDA_MINIATURAS_PLANIMETRIA_GIRASOLCORTE___sqmwzl.gif",
       "index": 4
     },
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125914/TEJIDA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_vayffy.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773486/TEJIDA_MINIATURAS_PLANIMETRIA_AXOGENERAL_w3pzjs.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125914/TEJIDA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_vayffy.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239626/TEJIDA_PLANIMETRIA_1920X1080_AXOGENERAL__duipw8.gif",
       "index": 5
     },
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312301/TEJIDA_D_cyh9rf.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773496/TEJIDA_MINIATURAS_PLANIMETRIA_DETALLECORTE1_jinjub.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312301/TEJIDA_D_cyh9rf.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239606/TEJIDA_MINIATURAS_PLANIMETRIA_DETALLECORTE1__sabi7x.gif",
       "index": 6
     },
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312295/TEJIDA_E_shhdjh.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773499/TEJIDA_MINIATURAS_PLANIMETRIA_DETALLECORTE2_rxh6zj.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312295/TEJIDA_E_shhdjh.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239610/TEJIDA_MINIATURAS_PLANIMETRIA_DETALLECORTE2__u9b7o9.gif",
       "index": 7
     },
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312303/TEJIDA_B_ifg3b9.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773490/TEJIDA_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_niaol9.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312303/TEJIDA_B_ifg3b9.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239571/TEJIDA_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR__ewm42v.gif",
       "index": 8
     },
     {
-      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312297/TEJIDA_C_wvacwi.gif",
+      "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738773493/TEJIDA_MINIATURAS_PLANIMETRIA_DETALLE3DINTERIOR_tzyshd.png",
       "type": "image",
-      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759312297/TEJIDA_C_wvacwi.gif",
+      "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239595/TEJIDA_MINIATURAS_PLANIMETRIA_DETALLE3DINTERIOR__zp5b3y.gif",
       "index": 9
     },
     {
@@ -392,9 +392,9 @@ const galleryConfigs = [
         "index": 6
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715203/casa-en-tejido-clima-psicometrica-00_m04nns.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923420/casa-en-tejido-clima-psicometrica-00_m04nns_zaigmz.gif",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715203/casa-en-tejido-clima-psicometrica-00_m04nns.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763923420/casa-en-tejido-clima-psicometrica-00_m04nns_zaigmz.gif",
         "index": 7
       }
     ]
@@ -402,7 +402,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

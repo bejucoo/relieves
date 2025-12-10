@@ -71,58 +71,58 @@ const galleryConfigs = [
         "title": "Planimetría",
         "items": [
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261144/ACUARELA_PLANIMETRIA_1920X1080_PLANTAGENERAL__liy5jz.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716089/ACUARELA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_lt9mca.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261144/ACUARELA_PLANIMETRIA_1920X1080_PLANTAGENERAL__liy5jz.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238668/ACUARELA_PLANIMETRIA_1920X1080_PLANTAGENERAL___v6rmbq.gif",
              index: 1
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261222/ACUARELA_PLANIMETRIA_1920X1080_GIRASOLPLANTA__yp7xuh.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716088/ACUARELA_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_nhcefu.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261222/ACUARELA_PLANIMETRIA_1920X1080_GIRASOLPLANTA__yp7xuh.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238662/ACUARELA_PLANIMETRIA_1920X1080_GIRASOLPLANTA___wphir7.gif",
             "index": 2
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261257/ACUARELA_PLANIMETRIA_1920X1080_CORTE__lq7nws.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716086/ACUARELA_MINIATURAS_PLANIMETRIA_CORTE_bzjv6z.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261257/ACUARELA_PLANIMETRIA_1920X1080_CORTE__lq7nws.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238647/ACUARELA_PLANIMETRIA_1920X1080_CORTE___qagexx.gif",
             caption: 'Corte',
             "index": 3
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261195/ACUARELA_PLANIMETRIA_1920X1080_GIRASOLCORTE__agtcr2.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716088/ACUARELA_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_lakes5.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261195/ACUARELA_PLANIMETRIA_1920X1080_GIRASOLCORTE__agtcr2.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238659/ACUARELA_PLANIMETRIA_1920X1080_GIRASOLCORTE__hvfkux.gif",
             "index": 4
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125700/ACUARELA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_n7c6rh.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716086/ACUARELA_MINIATURAS_PLANIMETRIA_AXOGENERAL_xqqbya.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125700/ACUARELA_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_n7c6rh.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238645/ACUARELA_PLANIMETRIA_1920X1080_AXOGENERAL__r2y1m4.gif",
             "index": 5
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260979/ACUARELA_PLANIMETRIA_1920X1080_DETALLECORTE1__hywxeo.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716089/ACUARELA_MINIATURAS_PLANIMETRIA_DETALLECORTE1_ltbj7u.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260979/ACUARELA_PLANIMETRIA_1920X1080_DETALLECORTE1__hywxeo.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238650/ACUARELA_PLANIMETRIA_1920X1080_DETALLECORTE1___zqe4rv.gif",
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261014/ACUARELA_PLANIMETRIA_1920X1080_DETALLECORTE2__hjlz0w.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716087/ACUARELA_MINIATURAS_PLANIMETRIA_DETALLECORTE2_rdrqtj.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261014/ACUARELA_PLANIMETRIA_1920X1080_DETALLECORTE2__hjlz0w.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238653/ACUARELA_PLANIMETRIA_1920X1080_DETALLECORTE2___x7pvpe.gif",
             "index": 7
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260893/ACUARELA_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__bg4snh.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716087/ACUARELA_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_oywclm.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260893/ACUARELA_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__bg4snh.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238656/ACUARELA_PLANIMETRIA_1920X1080_EXTERIOR__krpimi.gif",
             "index": 8
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260915/ACUARELA_PLANIMETRIA_1920X1080_DETALLE3DINTERIOR__bafqpc.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716087/ACUARELA_MINIATURAS_PLANIMETRIA_DETALLE3DINTERIOR_rlwy4t.png",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759260915/ACUARELA_PLANIMETRIA_1920X1080_DETALLE3DINTERIOR__bafqpc.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238665/ACUARELA_PLANIMETRIA_1920X1080_INTERIOR__vdbqkb.gif",
             "index": 9
           },
           
@@ -135,28 +135,22 @@ const galleryConfigs = [
             
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716089/ACUARELA_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_lt9mca.png",
-            "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716425/ACUARELA_PLANIMETRIA_1920X1080_PLANTAGENERAL_csxmz5.png",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716089/ACUARELA_MINIATURAS_PLANIMETRIA_MODELOS3D_gt478f.png",
+            "type": "model",
+            "modelUrl": "../../cases/laacuarela/media/models/01 LA ACUARELA GENERAL.obj",
             "index": 11
           },
           {
             "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716089/ACUARELA_MINIATURAS_PLANIMETRIA_MODELOS3D_gt478f.png",
             "type": "model",
-            "modelUrl": "../../cases/laacuarela/media/models/01 LA ACUARELA GENERAL.obj",
+            "modelUrl": "../../cases/laacuarela/media/models/01 La Acuarela_Base.obj",
             "index": 12
           },
           {
             "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716089/ACUARELA_MINIATURAS_PLANIMETRIA_MODELOS3D_gt478f.png",
             "type": "model",
-            "modelUrl": "../../cases/laacuarela/media/models/01 La Acuarela_Base.obj",
-            "index": 13
-          },
-          {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738716089/ACUARELA_MINIATURAS_PLANIMETRIA_MODELOS3D_gt478f.png",
-            "type": "model",
             "modelUrl": "../../cases/laacuarela/media/models/01 La Acuarela_Exterior.obj",
-            "index": 14
+            "index": 13
           }
         ]
       },
@@ -373,9 +367,9 @@ const galleryConfigs = [
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715789/casa-en-piedra-clima-psicometrica-00_yrqcek.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922403/casa-en-piedra-psic-00_bu33zl_ocopp6.gif",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715789/casa-en-piedra-clima-psicometrica-00_yrqcek.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922403/casa-en-piedra-psic-00_bu33zl_ocopp6.gif",
             "index": 7
           }
         ]
@@ -383,7 +377,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});

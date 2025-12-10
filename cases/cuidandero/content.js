@@ -105,82 +105,76 @@ const galleryConfigs = [
     "title": "Planimetría",
     "items": [
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261502/CUIDANDERO_PLANIMETRIA_1920X1080_PLANTAGENERAL__nz9x4a.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724106/CUIDANDERO_MINIATURAS_PLANIMETRIA_PLANTAGENERAL_hvoclt.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261502/CUIDANDERO_PLANIMETRIA_1920X1080_PLANTAGENERAL__nz9x4a.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238998/CUIDANDERO_PLANIMETRIA_1920X1080_PLANTAGENERAL___eil92r.gif",
         "index": 1
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261549/CUIDANDERO_PLANIMETRIA_1920X1080_GIRASOLPLANTA__g2g0km.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724104/CUIDANDERO_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_u23xv9.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261549/CUIDANDERO_PLANIMETRIA_1920X1080_GIRASOLPLANTA__g2g0km.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238984/CUIDANDERO_PLANIMETRIA_1920X1080_GIRASOLPLANTA___omjtq4.gif",
         "index": 2
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261523/CUIDANDERO_PLANIMETRIA_1920X1080_CORTE__btemoy.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724096/CUIDANDERO_MINIATURAS_PLANIMETRIA_CORTE_t4713i.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261523/CUIDANDERO_PLANIMETRIA_1920X1080_CORTE__btemoy.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239006/CUIDANDERO_PLANIMETRIA_1920X1080_CORTE___qt7pcu.gif",
         "index": 3
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261572/CUIDANDERO_PLANIMETRIA_1920X1080_GIRASOLCORTE_pp1ayj_ugipam.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724102/CUIDANDERO_MINIATURAS_PLANIMETRIA_GIRASOLCORTE_ehcvqj.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261572/CUIDANDERO_PLANIMETRIA_1920X1080_GIRASOLCORTE_pp1ayj_ugipam.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238981/CUIDANDERO_PLANIMETRIA_1920X1080_GIRASOLCORTE__j2wacw.gif",
         "index": 4
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125463/CUIDANDERO_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_j0dz8c.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724095/CUIDANDERO_MINIATURAS_PLANIMETRIA_AXOGENERAL_tjygpt.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1758125463/CUIDANDERO_PLANIMETRIA_1920X1080_AXOGENERAL_GIF_j0dz8c.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765239003/CUIDANDERO_PLANIMETRIA_1920X1080_AXOGENERAL_GIF__cbpm3x.gif",
         "index": 5
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261337/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLECORTE__rwstq5.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724100/CUIDANDERO_MINIATURAS_PLANIMETRIA_DETALLECORTE_qle5sx.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261337/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLECORTE__rwstq5.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238988/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLECORTE___orptvg.gif",
         "index": 6
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724106/CUIDANDERO_MINIATURAS_PLANIMETRIA_GIRASOLPLANTA_U23XV9.png",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724098/CUIDANDERO_MINIATURAS_PLANIMETRIA_DETALLE3DEXTERIOR_echwyb.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724159/CUIDANDERO_PLANIMETRIA_1920X1080_GIRASOLPLANTA_qkuexi.png",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238995/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__fwmnxx.gif",
         "index": 7
       },
       {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261403/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__haor9p.gif",
+        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724099/CUIDANDERO_MINIATURAS_PLANIMETRIA_DETALLE3DINTERIOR_cfdxof.png",
         "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261403/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLE3DEXTERIOR__haor9p.gif",
+        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1765238992/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLE3DEINTERIOR__xqkken.gif",
         "index": 8
-      },
-      {
-        "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261357/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLE3DINTERIOR__lutsrr.gif",
-        "type": "image",
-        "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1759261357/CUIDANDERO_PLANIMETRIA_1920X1080_DETALLE3DINTERIOR__lutsrr.gif",
-        "index": 9
       },
       {
         "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724106/CUIDANDERO_MINIATURAS_PLANIMETRIA_MODELOS3D_hujr5a.png",
         "type": "model",
         "modelUrl": "../../cases/cuidandero/media/models/04 EL CUIDANDERO GENERAL.obj",
-        "index": 10
+        "index": 9
       },
       {
         "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724106/CUIDANDERO_MINIATURAS_PLANIMETRIA_MODELOS3D_hujr5a.png",
         "type": "model",
         "modelUrl": "../../cases/cuidandero/media/models/El Cuidandero_Base.obj",
-        "index": 11
+        "index": 10
       },
       {
         "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724106/CUIDANDERO_MINIATURAS_PLANIMETRIA_MODELOS3D_hujr5a.png",
         "type": "model",
         "modelUrl": "../../cases/cuidandero/media/models/El Cuidandero_Exterior.obj",
-        "index": 12
+        "index": 11
       },
       {
         "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1738724106/CUIDANDERO_MINIATURAS_PLANIMETRIA_MODELOS3D_hujr5a.png",
         "type": "model",
         "modelUrl": "../../cases/cuidandero/media/models/El Cuidandero_Interior.obj",
-        "index": 13
+        "index": 12
       }
     ]
   },
@@ -396,9 +390,9 @@ const galleryConfigs = [
             "index": 6
           },
           {
-            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715664/casa-en-ladrillo-clima-psicometrica-00_tg2uwq.gif",
+            "thumbnail": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922690/casa-en-ladrillo-clima-psicometrica-00_tg2uwq_xga7cf.gif",
             "type": "image",
-            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1752715664/casa-en-ladrillo-clima-psicometrica-00_tg2uwq.gif",
+            "fullContent": "https://res.cloudinary.com/dmqyn1ic8/image/upload/v1763922690/casa-en-ladrillo-clima-psicometrica-00_tg2uwq_xga7cf.gif",
             "index": 7
           }
         ]
@@ -406,7 +400,7 @@ const galleryConfigs = [
 ];
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const manager = new GalleriesManager(caseContent.galleries);
-//     manager.init();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const manager = new GalleriesManager(caseContent.galleries);
+    manager.init();
+});
