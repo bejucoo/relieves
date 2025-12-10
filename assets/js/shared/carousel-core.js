@@ -21,18 +21,11 @@ class ContinuousCarousel {
     init() {
         this.container.className = 'gallery-row';
         this.container.style.setProperty('--case-color', this.options.color);
-
-        // if (this.options.titlePosition === 'left') {
 		this.container.appendChild(this.createTitleElement());
-        // }
 
         this.carouselContainer = document.createElement('div');
         this.carouselContainer.className = 'carousel-container';
         this.container.appendChild(this.carouselContainer);
-
-        // if (this.options.titlePosition === 'right') {
-        //     this.container.appendChild(this.createTitleElement());
-        // }
 
         this.setupCarousel();
     }
@@ -52,25 +45,12 @@ class ContinuousCarousel {
 
     async setupCarousel() {
         await this.loadInitialImages();
-        // this.startAnimation();
-        //this.setupEventListeners();
     }
 
     async loadInitialImages() {
         // Cargar el primer conjunto de imágenes
         const baseItems = await this.createImageSet(this.galleries);
         this.items.push(...baseItems);
-
-        // // Calcular el ancho total necesario
-        // const containerWidth = this.carouselContainer.offsetWidth;
-        // this.totalWidth = this.calculateTotalWidth();
-
-        // Duplicar imágenes hasta llenar el viewport más buffer
-        // while (this.totalWidth < containerWidth * 2) {
-        //     const newItems = await this.createImageSet(this.galleries);
-        //     this.items.push(...newItems);
-        //     this.totalWidth = this.calculateTotalWidth();
-        // }
     }
 
     async createImageSet(galleries) {
@@ -96,7 +76,6 @@ class ContinuousCarousel {
                     // Asegurarnos de que pasamos el item completo y el índice correcto
                     element.addEventListener('click', (e) => {
                         e.preventDefault();
-                        // console.log('Click en item:', item); // Debug
                         if (item.type === 'model') {
                             this.openInLightbox({
                                 ...item,
@@ -107,13 +86,6 @@ class ContinuousCarousel {
                         }
                     });
                 }
-
-                /*img.onload = () => {
-                    // const position = this.totalWidth + (arrayIndex * (img.width + this.options.gap));
-					const position = arrayIndex * (img.width + this.options.gap);
-                    element.style.transform = `translateX(${position}px)`;
-                    resolve(element);
-                };*/
 
                 element.appendChild(img);
                 this.carouselContainer.appendChild(element);
@@ -134,13 +106,6 @@ class ContinuousCarousel {
                 return;
             }
 
-            // console.log('Abriendo en lightbox:', {
-            //     item,
-            //     index,
-            //     total: galleryConfig.items.length,
-            //     galleryId: this.options.galleryId
-            // });
-
             window.lightbox.open({
                 item: {
                     ...item,
@@ -155,110 +120,6 @@ class ContinuousCarousel {
             console.warn('Lightbox no inicializado');
         }
     }
-
-    // calculateTotalWidth() {
-    //     return this.items.reduce((width, item) => {
-    //         const img = item.querySelector('img');
-    //         return width + img.offsetWidth + this.options.gap;
-    //     }, 0);
-    // }
-
-    // getItemPosition(item) {
-    //     const transform = new DOMMatrix(getComputedStyle(item).transform);
-    //     return transform.m41;
-    // }
-
-    // startAnimation() {
-    //     let lastTime = performance.now();
-    //     let pauseStartTime = null;
-    //     let accumulatedPauseTime = 0;
-    //
-    //     const animate = (currentTime) => {
-    //         if (!this.isPaused) {
-    //             if (pauseStartTime !== null) {
-    //                 accumulatedPauseTime = currentTime - pauseStartTime;
-    //                 lastTime = currentTime - accumulatedPauseTime;
-    //                 pauseStartTime = null;
-    //             }
-    //
-    //             const deltaTime = (currentTime - lastTime - accumulatedPauseTime);
-    //             lastTime = currentTime - accumulatedPauseTime;
-    //
-    //             const speed = this.options.direction === 'left' ? -1 : 1;
-    //             const easeFactor = pauseStartTime === null ? 1 : Math.min((currentTime - lastTime) / 500, 1);
-    //             const moveAmount = (speed * this.options.speed * deltaTime * easeFactor) / 16;
-    //
-    //             this.items.forEach(item => {
-    //                 const currentX = this.getItemPosition(item);
-    //                 const itemWidth = item.offsetWidth;
-    //                 const containerRect = this.carouselContainer.getBoundingClientRect();
-    //
-    //                 let newX = currentX + moveAmount;
-    //
-    //                 if (this.options.direction === 'left') {
-    //                     if (currentX + itemWidth < 0) {
-    //                         const lastPosition = Math.max(...this.items.map(i =>
-    //                             this.getItemPosition(i) + i.offsetWidth
-    //                         ));
-    //                         newX = lastPosition + this.options.gap;
-    //                     }
-    //                 } else {
-    //                     if (currentX > containerRect.width) {
-    //                         const firstPosition = Math.min(...this.items.map(i =>
-    //                             this.getItemPosition(i)
-    //                         ));
-    //                         newX = firstPosition - itemWidth - this.options.gap;
-    //                     }
-    //                 }
-    //
-    //                 item.style.transform = `translateX(${newX}px)`;
-    //             });
-    //         } else {
-    //             if (pauseStartTime === null) {
-    //                 pauseStartTime = currentTime;
-    //             }
-    //         }
-    //
-    //         this.animationFrame = requestAnimationFrame(animate);
-    //     };
-    //
-    //     this.animationFrame = requestAnimationFrame(animate);
-    // }
-
-//     setupEventListeners() {
-//         // Configurar eventos de pausa al hover
-//         this.carouselContainer.addEventListener('mouseenter', () => {
-//             this.isPaused = true;
-//         });
-//
-//         this.carouselContainer.addEventListener('mouseleave', () => {
-//             this.isPaused = false;
-//         });
-//
-//         Manejar redimensionamiento de ventana
-//         window.addEventListener('resize', () => {
-//             this.handleResize();
-//         });
-//     }
-
-    // handleResize() {
-    //     const containerWidth = this.carouselContainer.offsetWidth;
-    //     this.totalWidth = this.calculateTotalWidth();
-    //
-    //     if (this.totalWidth < containerWidth * 2) {
-    //         this.loadInitialImages();
-    //     }
-    // }
-
-    // destroy() {
-    //     if (this.animationFrame) {
-    //         cancelAnimationFrame(this.animationFrame);
-    //     }
-    //     this.items = [];
-    //     while (this.carouselContainer.firstChild) {
-    //         this.carouselContainer.firstChild.remove();
-    //     }
-    // }
 }
 
 class GalleriesManager {
@@ -282,11 +143,6 @@ class GalleriesManager {
             }
         });
     }
-
-    // destroy() {
-    //     this.instances.forEach(instance => instance.destroy());
-    //     this.instances = [];
-    // }
 }
 
 // Inicializar cuando el DOM esté listo

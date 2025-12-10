@@ -1,14 +1,3 @@
-// ==========================================
-// CONFIGURACIÓN Y CONSTANTES GLOBALES
-// ==========================================
-
-
-// const ONBOARDING_RESET_TIME = 2 * 60 * 60 * 1000; // 2 horas en milisegundos
-
-// Al inicio de script.js
-// const BASE_PATH = '/relieves/cases/';
-
-
 window.getBasePath = function() {
     const path = window.location.pathname;
     
@@ -64,69 +53,19 @@ function navigateToPage(type, destination) {
     window.location.href = finalPath;
 }
 
-// function checkOnboardingStatus() {
-//     const onboardingState = localStorage.getItem('hasVisitedBefore');
-//     if (!onboardingState) return false;
-//
-//     const { timestamp } = JSON.parse(onboardingState);
-//     const hasExpired = Date.now() - timestamp > ONBOARDING_RESET_TIME;
-//
-//     if (hasExpired) {
-//         localStorage.removeItem('hasVisitedBefore');
-//         return false;
-//     }
-//
-//     return true;
-// }
 
-
-// function setOnboardingComplete() {
-//     localStorage.setItem('hasVisitedBefore', JSON.stringify({
-//         timestamp: Date.now()
-//     }));
-// }
-// Agregar al inicio de script.js
 const ALTITUDE_CACHE_DURATION = 30 * 60 * 1000; // 30 minutos
 
-
-
-
-
-
-// function cacheAltitude(altitude) {
-//     localStorage.setItem('cachedAltitude', JSON.stringify({
-//         value: altitude,
-//         timestamp: Date.now()
-//     }));
-// }
-
-// function getCachedAltitude() {
-//     const cached = localStorage.getItem('cachedAltitude');
-//     if (!cached) return null;
-//
-//     const { value, timestamp } = JSON.parse(cached);
-//     if (Date.now() - timestamp > ALTITUDE_CACHE_DURATION) {
-//         localStorage.removeItem('cachedAltitude');
-//         return null;
-//     }
-//
-//     return value;
-// }
-
-// const MAX_ALTITUDE = 3640;
 const CLOUDINARY_BASE = 'https://res.cloudinary.com/dmqyn1ic8/image/upload/v1734390242/';
 window.updateUserAltitude = updateUserAltitude;
 
-// Variables globales para estado
 let activeCaseId = null;
 
 
 // ==========================================
 // FUNCIONES DE ALTITUD Y UBICACIÓN
 // ==========================================
-
-// Función para manejar la solicitud de ubicación
-// Se expone la función globalmente
+// Función para manejar la solicitud de ubicación. Se expone la función globalmente
 window.requestUserAltitude = requestUserAltitude;
 async function requestUserAltitude() {
     if ("geolocation" in navigator) {
@@ -161,7 +100,7 @@ async function requestUserAltitude() {
     }
 }
 
-// También modifica la función setAltitudeUnavailable existente:
+// Modifica la función setAltitudeUnavailable existente:
 function setAltitudeUnavailable() {
     userAltitudeSpan.textContent = "no disponible";
     const userAltitudeElement = document.getElementById('user-altitude');
@@ -201,8 +140,6 @@ function getOptimizedImageUrl(url, options = {}) {
         `f_${format}`,
         'c_limit'
     ].join(',');
-
-    // return url.replace('/upload/', `/upload/${transformations}/`);
 
 	const cleanedUrl = url.replace(/\/upload\/(?:[^/]+\/)?(v\d+\/)/, '/upload/$1');
 
@@ -425,30 +362,28 @@ window.caseNames = {
     10: 'muela'
 };
 
+
+
 // ==========================================
 // ELEMENTOS DEL DOM
 // ==========================================
-
 const altimeterBar = document.getElementById('altimeter-bar');
 const userAltitudeSpan = document.querySelector('#user-altitude span');
 const imageGrid = document.getElementById('image-grid');
 const feedbackElement = document.getElementById('feedback');
 const selectedCaseElement = document.getElementById('selected-case');
-// const menuBtn = document.getElementById('menu-btn');
 const menuOverlay = document.getElementById('menu-overlay');
 const caseList = document.querySelector('.case-list');
 const menuToggle = document.getElementById('mobile-menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
+
 // ==========================================
 // OPTIMIZACIÓN DE IMÁGENES
 // ==========================================
-
 function loadOptimizedImages() {
     const viewportWidth = window.innerWidth;
     const options = {
-        // width: viewportWidth < 768 ? 400 :
-        //        viewportWidth < 1200 ? 800 : 1200,
 		width: 300,
         quality: 'auto',
         format: 'auto'
@@ -462,73 +397,11 @@ function loadOptimizedImages() {
     });
 }
 
-// function preloadCriticalImages() {
-//     const criticalImages = caseStudies.slice(0, 3).flatMap(study => study.images);
-//     criticalImages.forEach(src => {
-//         const optimizedSrc = getOptimizedImageUrl(src, {
-//             // width: window.innerWidth < 768 ? 400 : 800,
-// 			width: 300,
-//             quality: 'auto',
-//             format: 'auto'
-//         });
-//         const img = new Image();
-//         img.src = optimizedSrc;
-//     });
-// }
-
-// ==========================================
-// FUNCIONES DE YOUTUBE Y OVERLAY
-// ==========================================
 
 
-
-
-
-// function showWelcomeOverlay() {
-//     const welcomeOverlay = document.getElementById('welcome-overlay');
-//     if (welcomeOverlay) {
-//         welcomeOverlay.style.display = 'flex';
-//     }
-// }
-
-
-
-// function hideWelcomeOverlay() {
-//     const welcomeOverlay = document.getElementById('welcome-overlay');
-//     if (welcomeOverlay) {
-//         welcomeOverlay.style.display = 'none';
-//     }
-// }
-
-// function initWelcomeOverlay() {
-//     const referrer = document.referrer;
-//     const isFromCasePage = Object.values(caseNames).some(caseName =>
-//         referrer.toLowerCase().includes(caseName.toLowerCase())
-//     );
-//
-//     // Verificar si ya se mostró el onboarding
-//     const hasVisited = localStorage.getItem('hasVisitedBefore');
-//
-//     // Solo mostrar el overlay si:
-//     // 1. No se ha visitado antes Y
-//     // 2. No viene de una página de caso
-//     // 3. No viene desde el botón de Home del menú
-//     const shouldShowOverlay = !hasVisited && !isFromCasePage;
-//
-//     if (shouldShowOverlay) {
-//         showWelcomeOverlay();
-//         localStorage.setItem('hasVisitedBefore', 'true');
-//     } else {
-//         hideWelcomeOverlay();
-//         // Asegurarse de que la página esté lista para interactuar
-//         document.body.classList.remove('onboarding-active');
-//         document.body.classList.add('onboarding-complete');
-//     }
-// }
 // ==========================================
 // FUNCIONES DE ALTITUD Y MARCADORES
 // ==========================================
-
 function createAltitudeMarkers() {
     const sortedCases = [...caseStudies].sort((a, b) => b.altitude - a.altitude);
     const totalCases = sortedCases.length;
@@ -582,81 +455,9 @@ function createUserAltitudeIndicator() {
     
     const indicator = document.createElement('div');
     indicator.id = 'user-altitude-indicator';
-    indicator.style.display = 'none'; // Oculto por defecto
+    indicator.style.display = 'none';
     altimeterBar.appendChild(indicator);
 }
-
-// Funciones de obtención y actualización de altitud
-// async function getUserAltitude() {
-//     if (getUserAltitude.inProgress) return;
-//     getUserAltitude.inProgress = true;
-//
-//     userAltitudeSpan.textContent = "Cargando...";
-//
-//     try {
-//         if ("geolocation" in navigator) {
-//             const position = await new Promise((resolve, reject) => {
-//                 navigator.geolocation.getCurrentPosition(resolve, reject, {
-//                     timeout: 10000,
-//                     maximumAge: 300000
-//                 });
-//             });
-//
-//             const { latitude, longitude } = position.coords;
-//             const response = await fetch(`https://api.open-elevation.com/api/v1/lookup?locations=${latitude},${longitude}`);
-//
-//             if (!response.ok) throw new Error('Network response was not ok');
-//
-//             const data = await response.json();
-//             if (data.results?.[0]?.elevation) {
-//                 updateUserAltitude(Math.round(data.results[0].elevation));
-//             } else {
-//                 throw new Error('No altitude data');
-//             }
-//         } else {
-//             throw new Error('Geolocation not supported');
-//         }
-//     } catch (error) {
-//         console.error('Error getting altitude:', error);
-//         setAltitudeUnavailable();
-//     } finally {
-//         getUserAltitude.inProgress = false;
-//     }
-// }
-
-// function setAltitudeUnavailable() {
-//     userAltitudeSpan.textContent = "no disponible";
-//     const userAltitudeElement = document.getElementById('user-altitude');
-//     userAltitudeElement.classList.add('unavailable');
-//     userAltitudeElement.style.cursor = 'pointer';
-//
-//     // Agregar el event listener para solicitar ubicación al hacer clic
-//     userAltitudeElement.addEventListener('click', async () => {
-//         if ("geolocation" in navigator) {
-//             try {
-//                 const position = await new Promise((resolve, reject) => {
-//                     navigator.geolocation.getCurrentPosition(resolve, reject);
-//                 });
-//
-//                 const { latitude, longitude } = position.coords;
-//                 const response = await fetch(
-//                     `https://api.open-elevation.com/api/v1/lookup?locations=${latitude},${longitude}`
-//                 );
-//                 const data = await response.json();
-//                 const altitude = Math.round(data.results[0].elevation);
-//
-//                 updateUserAltitude(altitude);
-//                 userAltitudeElement.classList.remove('unavailable');
-//             } catch (error) {
-//                 console.error('Error getting location:', error);
-//                 setAltitudeUnavailable();
-//             }
-//         }
-//     });
-//
-//     const indicator = document.getElementById('user-altitude-indicator');
-//     if (indicator) indicator.style.display = 'none';
-// }
 
 function updateUserAltitude(altitude) {
     userAltitudeSpan.textContent = `${altitude}msnm`;
@@ -697,6 +498,8 @@ function updateUserAltitude(altitude) {
     indicator.style.bottom = `${100 - position}%`;
 }
 
+
+
 // ==========================================
 // MANEJO DE CASOS Y GRID DE IMÁGENES
 // ==========================================
@@ -714,7 +517,8 @@ function selectCase(caseId) {
         selectedMarker.classList.add('active');
         selectedMarker.textContent = selectedMarker.dataset.altitude;
         selectedMarker.style.backgroundColor = selectedCase.color;
-        // Aplicar el color de texto contrastante al marcador de altitud
+
+		// Aplicar el color de texto contrastante al marcador de altitud
         selectedMarker.style.color = calculateTextColor(selectedCase.color);
         
         updateImageGrid(caseId);
@@ -725,7 +529,8 @@ function selectCase(caseId) {
         
         // Aplicar color de fondo al feedback
         feedbackElement.style.backgroundColor = selectedCase.color;
-        // Calcular y aplicar color de texto apropiado al feedback
+
+		// Calcular y aplicar color de texto apropiado al feedback
         feedbackElement.style.color = calculateTextColor(selectedCase.color);
         
         showPermanentFeedback(`Ir al caso de estudio`);
@@ -797,7 +602,6 @@ function loadImages() {
                             const img = entry.target.querySelector('img');
                             if (img?.dataset.src) {
                                 img.src = getOptimizedImageUrl(img.dataset.src, {
-                                    // width: window.innerWidth < 768 ? 400 : 800,
 									width: 300,
                                     quality: 'auto',
                                     format: 'auto'
@@ -812,7 +616,6 @@ function loadImages() {
             observer.observe(container);
         } else {
             img.src = getOptimizedImageUrl(img.dataset.src, {
-                // width: window.innerWidth < 768 ? 400 : 800,
 				width: 300,
                 quality: 'auto',
                 format: 'auto'
@@ -821,10 +624,11 @@ function loadImages() {
     });
 }
 
+
+
 // ==========================================
 // UTILIDADES Y NAVEGACIÓN
 // ==========================================
-
 function showPermanentFeedback(message) {
     feedbackElement.textContent = message;
     feedbackElement.classList.add('show', 'permanent');
@@ -871,90 +675,27 @@ function shuffleArray(array) {
     }
 }
 
-// function resetWelcomeState() {
-//     localStorage.removeItem('hasVisitedBefore');
-//     localStorage.removeItem('cachedAltitude');
-//
-//     // Reiniciar cualquier estado relacionado con el onboarding
-//     const userAltitudeSpan = document.querySelector('#user-altitude span');
-//     if (userAltitudeSpan) {
-//         userAltitudeSpan.textContent = "click aquí para obtener altura.";
-//     }
-//
-//     const userAltitudeIndicator = document.getElementById('user-altitude-indicator');
-//     if (userAltitudeIndicator) {
-//         userAltitudeIndicator.style.display = 'none';
-//     }
-// }
-
 function handleTouch(e) {
     e.preventDefault();
     const touch = e.touches[0];
     selectNearestMarker(touch.clientY);
 }
 
+
+
 // ==========================================
 // MENÚ Y LISTA DE CASOS
 // ==========================================
-
 function toggleMenu(e) {
-    // const isMenuOpen = document.body.classList.toggle('menu-open');
-    // menuOverlay.style.display = isMenuOpen ? 'block' : 'none';
-    // if (isMenuOpen) {
-    //     populateCaseList();
-    // }
 	e.preventDefault();
 	mobileMenu.classList.toggle('active');
 }
 
-// function populateCaseList() {
-//     const caseList = document.querySelector('.case-list');
-//     if (!caseList) return;
-//
-//
-//
-//     caseList.innerHTML = '';
-//
-//     caseStudies.forEach(study => {
-//         const caseItem = document.createElement('div');
-//         caseItem.className = 'case-item';
-//
-//         caseItem.innerHTML = `
-//             <div class="case-header">
-//                 <h3 class="case-altitude">${study.altitude} msnm</h3>
-//                 <h4 class="case-name" style="color: ${study.color}">${study.fullName}</h4>
-//             </div>
-//             <div class="case-details">
-//                 <p class="case-location">${study.location}</p>
-//                 <p class="case-architects">Arquitectos: ${study.architects}</p>
-//                 <p class="case-year">${study.year}</p>
-//             </div>
-//         `;
-//
-//
-//         caseItem.addEventListener('click', () => {
-//             const basePath = window.location.pathname.includes('/cases/') ? '../../' : '';
-//             window.location.href = `${basePath}cases/${caseNames[study.id]}/index.html`;
-//             // toggleMenu();
-//         });
-//
-//         caseItem.addEventListener('mouseenter', () => {
-//             caseItem.style.borderColor = study.color;
-//             caseItem.style.backgroundColor = `${study.color}10`;
-//         });
-//
-//         caseItem.addEventListener('mouseleave', () => {
-//             caseItem.style.borderColor = '';
-//             caseItem.style.backgroundColor = '';
-//         });
-//
-//         caseList.appendChild(caseItem);
-//     });
-// }
+
+
 // ==========================================
 // INICIALIZACIÓN Y EVENT LISTENERS
 // ==========================================
-
 function cleanup() {
     if (window.imageObserver) {
         window.imageObserver.disconnect();
@@ -965,92 +706,7 @@ function cleanup() {
     
 }
 
-// function restartOnboarding() {
-//     // 1. Limpiar el estado actual
-//     const welcomeOverlay = document.getElementById('welcome-overlay');
-//     const menuOverlay = document.getElementById('menu-overlay');
-//
-//     // 2. Destruir completamente la instancia anterior de React
-//     if (welcomeOverlay) {
-//         ReactDOM.unmountComponentAtNode(welcomeOverlay);
-//     }
-//
-//     // 3. Resetear el DOM y los estados
-//     document.body.style.pointerEvents = 'none';
-//     document.body.classList.remove('onboarding-complete');
-//     document.body.classList.add('onboarding-active');
-//     resetWelcomeState();
-//
-//     // 4. Ocultar elementos UI
-//     const elementsToHide = document.querySelectorAll('.nav-left, .nav-center, .nav-right, #altimeter-container, .case-image, .feedback');
-//     elementsToHide.forEach(el => {
-//         el.style.opacity = '0';
-//         el.style.transition = 'none';
-//     });
-//
-//     // 5. Cerrar el menú
-//     if (menuOverlay) {
-//         menuOverlay.style.display = 'none';
-//     }
-//     document.body.classList.remove('menu-open');
-//
-//     // 6. Limpiar y preparar el overlay
-//     if (welcomeOverlay) {
-//         welcomeOverlay.innerHTML = '';
-//         welcomeOverlay.style.display = 'flex';
-//         welcomeOverlay.style.opacity = '1';
-//         welcomeOverlay.style.transition = 'none';
-//     }
-//
-//     // 7. Forzar reflow
-//     welcomeOverlay.offsetHeight;
-//
-//     // 8. Esperar a que el DOM se actualice
-//     window.requestAnimationFrame(() => {
-//         window.requestAnimationFrame(() => {
-//             // 9. Restaurar transiciones
-//             elementsToHide.forEach(el => {
-//                 el.style.transition = '';
-//             });
-//             if (welcomeOverlay) {
-//                 welcomeOverlay.style.transition = '';
-//             }
-//
-//             // 10. Montar nuevo componente React
-//             ReactDOM.render(
-//                 React.createElement(OnboardingExperience, {
-//                     key: Date.now(),
-//                     forceReset: true
-//                 }),
-//                 welcomeOverlay,
-//                 () => {
-//                     document.body.style.pointerEvents = '';
-//                     // Asegurar que el scroll está en la parte superior
-//                     window.scrollTo(0, 0);
-//                 }
-//             );
-//         });
-//     });
-// }
-
 function initializeMainPage() {
-    // Asegurarse de que el menú esté cerrado y limpiar estados
-    // document.body.classList.remove('menu-open');
-    // if (menuOverlay) {
-    //     menuOverlay.style.display = 'none';
-    // }
-    // document.body.classList.remove('menu-open');
-    
-    // Asegurar que los elementos estén en su lugar correcto
-    // const mainNav = document.getElementById('main-nav');
-    // if (mainNav) {
-    //     document.querySelectorAll('.nav-left, .nav-center, .nav-right').forEach(element => {
-    //         if (element.parentElement.id === 'menu-overlay') {
-    //             mainNav.appendChild(element);
-    //         }
-    //     });
-    // }
-    
     createAltitudeMarkers();
     createUserAltitudeIndicator();
     loadImages();
@@ -1081,15 +737,6 @@ function initializeMainPage() {
         }
     });
     
-    // Restablecer el estado del menú
-    // const menuBtn = document.getElementById('menu-btn');
-    // if (menuBtn) {
-    //     const menuText = menuBtn.querySelector('.menu-text');
-    //     const closeText = menuBtn.querySelector('.close-text');
-    //     if (menuText) menuText.style.display = 'inline-block';
-    //     if (closeText) closeText.style.display = 'none';
-    // }
-    
     // Verificar si tenemos una altitud guardada del onboarding
     const lastKnownAltitude = localStorage.getItem('lastKnownAltitude');
     if (lastKnownAltitude) {
@@ -1108,7 +755,6 @@ function initializeMainPage() {
     }
 
     loadOptimizedImages();
-    //preloadCriticalImages();
 }
 
 // Manejador global de errores
@@ -1117,8 +763,6 @@ window.addEventListener('error', function(event) {
     event.preventDefault();
 });
 
-
-
 window.navigateToCaseStudy = function(caseId) {
     const casePath = window.getCasePath(caseId);
     if (casePath) {
@@ -1126,7 +770,6 @@ window.navigateToCaseStudy = function(caseId) {
     }
 };
 
-// Mover este evento fuera del DOMContentLoaded
 document.addEventListener('click', (event) => {
     if (
 		activeCaseId &&
@@ -1139,7 +782,6 @@ document.addEventListener('click', (event) => {
         deselectCase();
     }
 });
-
 
 // Inicialización cuando el DOM está listo
 document.addEventListener('DOMContentLoaded', () => {
@@ -1157,18 +799,6 @@ document.addEventListener('DOMContentLoaded', () => {
         altimeterBar.addEventListener('touchstart', handleTouch);
         altimeterBar.addEventListener('touchmove', handleTouch);
     }
-
-    // Inicializar botón de continuar
-//     const continueBtn = document.getElementById('continue-btn');
-//     if (continueBtn) {
-//         const handleContinue = () => {
-//             hideWelcomeOverlay();
-//             console.log('Welcome overlay closed');
-//         };
-//
-//         continueBtn.removeEventListener('click', handleContinue);
-//         continueBtn.addEventListener('click', handleContinue);
-//     }
 
     // Event listener para redimensionamiento de ventana
     let resizeTimeout;
@@ -1195,7 +825,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inicializar la aplicación
     initializeMainPage();
-    // initWelcomeOverlay();
-    
     console.log("Aplicación iniciada.");
 });

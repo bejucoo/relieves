@@ -1,5 +1,3 @@
-console.log("onboardingCase.js");
-
 const driver = window.driver.js.driver;
 const driverToggle = document.getElementById('driver-toggle');
 

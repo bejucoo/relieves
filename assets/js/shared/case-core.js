@@ -1,8 +1,6 @@
 const menuToggle = document.getElementById('mobile-menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
-
-
 // Obtener ID del caso actual.
 function getCurrentCaseId() {
 	const pathname = window.location.pathname;
@@ -43,22 +41,6 @@ function getCurrentCase() {
     return window.caseStudies.find(study => study.id === caseId);
 }
 
-
-
-// function calculateTextColor(backgroundColor) {
-// 	// Convertir HEX a RGB
-// 	const hex = backgroundColor.replace('#', '');
-// 	const r = parseInt(hex.substr(0, 2), 16);
-// 	const g = parseInt(hex.substr(2, 2), 16);
-// 	const b = parseInt(hex.substr(4, 2), 16);
-//
-// 	// Calcular luminancia (basado en la percepción humana)
-// 	const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-//
-// 	// Retornar color basado en luminancia
-// 	return luminance > 0.5 ? '#1C3B2D' : '#FFFFFF';
-// }
-
 // Calcular el color del texto basado en el contraste.
 function calculateTextColor(backgroundColor) {
 	// Convertir hex a rgb
@@ -73,7 +55,6 @@ function calculateTextColor(backgroundColor) {
 	// Retornar color basado en luminancia
 	return luminance > 0.5 ? '#1C3B2D' : '#FFFFFF';
 }
-
 
 // Iniciar ticker.
 function initializeInfoTicker(currentCase) {
@@ -135,8 +116,6 @@ function initializeInfoTicker(currentCase) {
 	}
 }
 
-
-
 // Iniciar carga del caso.
 function initializeCase() {
 	const currentCase = getCurrentCase();
@@ -160,8 +139,6 @@ function initializeCase() {
 	initializeInfoTicker(currentCase);
 }
 
-
-
 // Intentar iniciar repetidamente hasta que tenga éxito.
 function tryInitialize(attempts = 0) {
 	const maxAttempts = 50; // 5 segundos máximo (50 * 100ms)
@@ -179,8 +156,6 @@ function tryInitialize(attempts = 0) {
 		setTimeout(() => tryInitialize(attempts + 1), 100);
 	}
 }
-
-
 
 // Iniciar loader de contenido.
 function initializeLoader() {
@@ -244,15 +219,11 @@ function initializeLoader() {
     });
 }
 
-
-
 // Toggle usando botón hamburguesa.
 function toggleMenu(e) {
 	e.preventDefault();
 	mobileMenu.classList.toggle('active');
 }
-
-
 
 // Iniciar proceso cuando el DOM esté listo.
 document.addEventListener('DOMContentLoaded', () => {

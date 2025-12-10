@@ -183,7 +183,7 @@ a:has(.info-case):hover {
 .video-wrapper {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Aspect Ratio 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     background-color: #f5f5f5;
